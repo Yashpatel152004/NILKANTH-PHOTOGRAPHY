@@ -60,7 +60,7 @@ body {
     margin: auto;
     filter: url('#goo');
     animation: rotate-move 2s ease-in-out infinite;
-    transition: all 0.8s linear;
+    transition: all 0.2s linear;
 }
 .dot {
     width: 70px;
