@@ -325,22 +325,6 @@ body.dark .search-field input {
 body.dark .search-field i {
     color: var(--text-color);
 }
-.carousal {
-    width: 100vw;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.carousel-box {
-    width: 90vw;
-    height: 40vh;
-    background-color: #6e6e6e;
-    border-radius: 1vh;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
 /* SErvice BOXES */
 .Service-box {
     background-color: transparent;
@@ -440,21 +424,6 @@ body.dark .search-field i {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     transform: scale(1.03);
 }
-/* Team Info */
-/* COntact */
- /* .footer {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    background-color: #e6d8d87a;
-    color: #725858;
-    display:block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding:4px;
-    text-align: center;
-} */
 .footer-name h1{
     font-family: 'Monopoly';
 }
@@ -544,8 +513,6 @@ border-radius: 4vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
 }
 .footer-gallery h4{
     width: 100%;
@@ -579,8 +546,6 @@ border-radius: 4vh;
     padding-left: 4%;
     overflow: hidden;
     height: auto;
-    
-
 }
 .footer-update .form {
     width: 30vw;
@@ -698,7 +663,6 @@ border-radius: 4vh;
     align-items: center;
     padding: 4%;
     width: 100%;
-   
 }
 .footer-icons h4{
     font-family: 'Didact Gothic';
@@ -713,7 +677,6 @@ border-radius: 4vh;
     list-style: none;
     overflow: hidden;
     display: flex;
-    
 }
 .footer-icons .icon-box-2 li a{
     width: 100%;
@@ -1105,35 +1068,25 @@ footer .Contact li:hover ~ h6{
         height: auto;
         overflow: hidden;
 }
-
 .footer-icons .links{
         display: block;
-}
-.footer-icons .icon-box-2 li{
-    
 }
 .footer-icons .links li {
         width: 100%;
         margin: 1%;
         font-size: 12px;
         display: block;
-         
        display: flex;
        justify-content: center;
-       
-       
 }
   .footer-icons .links li a{
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
-          
   }
-
 .footer-icons .links li:hover{
 transform: translateX(8px);
-
 color:#212A3F;
 border-radius: 0.4vh;
 transition: all 0.2s ease-in ;
@@ -1141,7 +1094,6 @@ padding: 0.5px;
 padding-left: 4%;
 border:none;
    border-left: 0.4vh solid rgba(85, 187, 255, 0.925);   border-left: 0.4vh solid rgba(85, 187, 255, 0.925);
-
 }
 .footer-icons .links li:hover  a{
 color:#7196eb;
