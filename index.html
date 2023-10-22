@@ -30,6 +30,7 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body onload="myfunction()">
@@ -49,6 +50,7 @@
             </defs>
         </svg>
     </div>
+    <div class="wrapper">
     <div class="icon-box"><a href="tel:
         077779 78666" title="Call Now"><img src="phone-call (2).png" class="img-fluid"
                 alt=""></a></div>
@@ -291,7 +293,9 @@
             </div>
         </footer>
     </section>
-
+    </div>
+    </div>
+    
 </body>
 <script>
     AOS.init({
@@ -339,4 +343,16 @@
             }
         }
     </script>
+    <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+
+<script charset="utf-8">  
+ var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+ if (!isMobile) {
+      luxy.init({
+        wrapper: '#luxy',
+        wrapperSpeed: 0.065,
+       
+    });
+ }
+ </script>
 </html>
