@@ -14,6 +14,8 @@
     src: url(Optima_Italic.woff);
     src: url(OPTIMA.woff);
 }
+html , body{
+    scropl-behavier:smooth;
 * {
     margin: 0;
     padding: 0;
