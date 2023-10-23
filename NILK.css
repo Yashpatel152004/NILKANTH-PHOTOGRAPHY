@@ -825,6 +825,8 @@ footer .Contact li:hover~h6 {
         scroll-behavior: smooth;
         scroll-snap-type: proximity;
     }
+    *{
+        filter:none;}
     .About {
         background-color: #ffffff;
         background-image: none;
