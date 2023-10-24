@@ -30,16 +30,54 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body onload="myfunction()">
-    <script>
-        function myfunction() {
+    <sxript>
+    AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+        const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark-mode") {
+            body.classList.add("dark");
+        }
+        // js code to toggle dark and light mode
+        modeToggle.addEventListener("click", () => {
+            modeToggle.classList.toggle("active");
+            body.classList.toggle("dark");
+            // js code to keep user selected mode even page refresh or file reopen
+            if (!body.classList.contains("dark")) {
+                localStorage.setItem("mode", "light-mode");
+            } else {
+                localStorage.setItem("mode", "dark-mode");
+            }
+        });
+        // js code to toggle search box
+        searchToggle.addEventListener("click", () => {
+            searchToggle.classList.toggle("active");
+        });
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+        body.addEventListener("click", e => {
+            let clickedElm = e.target;
+            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+                nav.classList.remove("active");
+            }
+        });
+    function myfunction() {
             {
                 document.getElementById("Loading").style.visibility = "hidden";
             }
-        }
     </script>
+</head>
+
+<body onload="myfunction()">
     <!-- Animation -->
     <div class="Animation-body" id="Loading">
         <div class="Animation-box">
@@ -96,47 +134,7 @@
                 </div>
             </div>
     </nav>
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 1000,
-        });
-        const body = document.querySelector("body"),
-            nav = document.querySelector("nav"),
-            modeToggle = document.querySelector(".dark-light"),
-            searchToggle = document.querySelector(".searchToggle"),
-            sidebarOpen = document.querySelector(".sidebarOpen"),
-            siderbarClose = document.querySelector(".siderbarClose");
-        let getMode = localStorage.getItem("mode");
-        if (getMode && getMode === "dark-mode") {
-            body.classList.add("dark");
-        }
-        // js code to toggle dark and light mode
-        modeToggle.addEventListener("click", () => {
-            modeToggle.classList.toggle("active");
-            body.classList.toggle("dark");
-            // js code to keep user selected mode even page refresh or file reopen
-            if (!body.classList.contains("dark")) {
-                localStorage.setItem("mode", "light-mode");
-            } else {
-                localStorage.setItem("mode", "dark-mode");
-            }
-        });
-        // js code to toggle search box
-        searchToggle.addEventListener("click", () => {
-            searchToggle.classList.toggle("active");
-        });
-        //   js code to toggle sidebar
-        sidebarOpen.addEventListener("click", () => {
-            nav.classList.add("active");
-        });
-        body.addEventListener("click", e => {
-            let clickedElm = e.target;
-            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
-                nav.classList.remove("active");
-            }
-        });
-    </script>
+        
     <!-- NIlakanth Photography Quetos -->
     <section id="About">
         <div class=" About ">
