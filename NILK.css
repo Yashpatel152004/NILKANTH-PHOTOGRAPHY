@@ -890,6 +890,10 @@ footer .Contact li:hover~h6 {
         scroll-snap-type: proximity;
         background-attachment: fixed;
     }
+      .Animation-box{
+                width: 60px;
+                height: 60px;
+        }
     .About {
         background-color: #ffffff;
         background-image: none;
@@ -1021,6 +1025,10 @@ footer .Contact li:hover~h6 {
         transition: all 0.2s linear;
         scrollbar-color: var(--con-bg-color);
     }
+      .Animation-box{
+                width: 100px;
+                height: 100px;
+        }
     .Service {
         min-width: 10vw;
         height: auto;
