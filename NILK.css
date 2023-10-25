@@ -69,12 +69,12 @@ body {
     transform: translate(-50%, -50%);
     margin: auto;
     filter: url('#goo');
-    animation: rotate-move 1s ease-in-out infinite;
-    transition: all 0.4s linear;
+    animation: rotate-move 0.8s ease-in-out infinite;
+    transition: all 0.2s linear;
 }
 .dot {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     border-radius: 10%;
     background-color: #d4d4d4;
     position: absolute;
