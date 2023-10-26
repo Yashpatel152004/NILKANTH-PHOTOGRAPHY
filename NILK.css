@@ -69,7 +69,7 @@ body {
 /* Loading Animation */
 .Animation-body {
     position: fixed;
-    transition: all 0.4s linear;
+    transition: all 0.8s linear;
     z-index: 10000;
     width: 100vw;
     height: 100%;
@@ -85,7 +85,7 @@ body {
     margin: auto;
     filter: url('#goo');
     animation: rotate-move 1s ease-in-out infinite;
-    transition: all 0.4s linear;
+    transition: all 0.8s linear;
 }
 .navLogo{
     height: 70px;
