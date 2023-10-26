@@ -13,10 +13,10 @@
     font-family: IsIdora;
     src: url(Latinotype\ -\ Isidora-Light.woff);
 }
-@font-face {
+/*@font-face {
     font-family: Optima;
     src: url(OPTIMA.woff);
-}
+}*/
 html,
 body {
     scroll-behavior: smooth;
