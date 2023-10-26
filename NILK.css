@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Didact+Gothic&family=Forum&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika&family=Concert+One&family=Dancing+Script:wght@500&family=League+Script&family=Nanum+Pen+Script&family=Open+Sans:wght@300&family=Raleway:wght@200&family=Space+Mono&display=swap');
+@import "~@flaticon/flaticon-uicons/css/all/all";
 @font-face {
     font-family: Madfool;
     src: url(madfool.woff);
