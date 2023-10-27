@@ -1114,7 +1114,7 @@ footer .Contact li:hover~h6 {
         border-radius: 10vw;
         transition: all 0.2s ease;
     }
-    .nav-bar .nav-links a:hover {
+    .nav-bar .nav-links a:focus {
         background-color: transparent;
         box-shadow: none;
     }
@@ -1141,6 +1141,9 @@ footer .Contact li:hover~h6 {
         transition: all 0.3s ease-in-out;
         transform: scale(1.03);
         filter: brightness(110%);
+    }
+    .nav-links li:hover a{
+        color:black;
     }
     .nav-links li a::before {
         content: '';
