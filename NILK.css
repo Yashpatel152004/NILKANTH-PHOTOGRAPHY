@@ -790,15 +790,16 @@ footer {
     font-family: 'Didact Gothic';
 }
 .footer-icons .icon-box-2 li {
-    width: 9vh;
+   width: 9vh;
     height: 9vh;
     background-color: transparent;
     border-radius: 0.5vh;
     margin: 1%;
-    margin-left: 8%;
+    margin-left: auto;
     list-style: none;
     overflow: hidden;
     display: flex;
+    padding: 4%;
 }
 .footer-icons .icon-box-2 li a {
     width: 100%;
