@@ -236,13 +236,13 @@ body {
 /* Stickey ICONS */
 .icon-box {
     position: fixed;
-    width: 9vh;
-    height: 9vh;
+    width: 8vh;
+    height: 8vh;
     right: 1vw;
     bottom: 1vh;
     z-index: 100;
     background-color: whitesmoke;
-    border-radius: 10vw;
+    border-radius: 4vh;
     overflow: hidden;
     box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.342);
     filter: saturate(400%);
