@@ -753,6 +753,8 @@ footer {
     padding: 1%;
     margin-bottom: 2%;
     background-attachment: fixed;
+    flex-wrap:wrap;
+    display:block;
 }
 .footer-icons li {
     list-style: none;
