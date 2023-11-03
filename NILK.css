@@ -1178,7 +1178,7 @@ footer .Contact li:hover~h6 {
         left: 50%;
         backdrop-filter: blur(10px);
         top: auto;
-        opacity: 0%;
+        opacity: 1%;
         color: transparent;
         background-color: transparent;
         transition: all 0.4s ease-in;
@@ -1279,7 +1279,7 @@ footer .Contact li:hover~h6 {
     }
     .footer-icons .links ul{
         display: block;
-        flex-wrap: wrap;
+        
         display: flex;
     }
     .footer-icons .links li {
