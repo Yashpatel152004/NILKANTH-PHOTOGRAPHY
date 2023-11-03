@@ -1092,7 +1092,7 @@ footer .Contact li:hover~h6 {
         background-attachment: fixed;
         transition: all 0.2s linear;
         scrollbar-color: var(--con-bg-color);
-        cursor: pointer;
+        
     }
     .navLogo{
         display: flex;
