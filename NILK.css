@@ -747,8 +747,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100;
-     
+    
+     width: -webkit-fill-available;
     margin: auto;
 }
 .footer-icons {
