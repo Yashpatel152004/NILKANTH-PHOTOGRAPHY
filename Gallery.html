@@ -8,22 +8,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Didact+Gothic&family=Forum&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&display=swap"
                 rel="stylesheet">
         <link rel="stylesheet" href="Gallery.css">
-</head>
-<body onload="myfunction()">
         <script>
                 function myfunction() {
                         document.getElementById("Loading").style.visibility = "hidden";
                 }
+                function mysearch() {
+                        document.getElementById("Searching").style.visibility = "visible";
+                }
+                function mycancel() {
+                        document.getElementById("Searching").style.visibility = "hidden";
+                }
         </script>
+</head>
+<body onload="myfunction()">
+                <img src="Gallery BG De.webp" alt="" class="BG">
+        <img src="Gallery BG 9 16.webp" alt="" class="BG2">
+       <div> 
         <nav>
                 <div class="nav-bar">
                         <div class="btn"><a href="index.html"><i class="bx bx-arrow-back "></i></a></div>
                         <div class="nav-logo"><img src="LOGO.png" class="" alt=""></div>
                         <div class="Search-box">
-                                <i class="bx bx-search"></i>
+                                <i class="bx bx-search" onclick="mysearch()"></i>
                         </div>
                 </div>
         </nav>
+               </div>
+        <div class="search-box" id="Searching">
+                <div class="search-bar">
+                        <form action="">
+                                <i class="bx bx-search search">
+                                        <input type="search" name="" id="" placeholder="Search..."></i>
+                                <i class="bx bx-x" onclick="mycancel()"></i>
+                        </form>
+                </div>
+        </div>
         <!-- Cards  -->
         <div class="Gallery">
                 <div class="Gallery-card">
@@ -257,7 +276,12 @@
         </div>
         <!-- Animation -->
         <div class="center" id="Loading">
-                <div class="load-img"><img src="LOGO.png" alt="" class="R-img  load-img"></div>
+                <div class="loader">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                </div>
         </div>
 </body>
 </html>
