@@ -21,9 +21,8 @@ h1,h2,h3,h4,h5,h6,h7{
 img{
     width: 100%;
 }
-img:hover{
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.003);
+img:hover~body{
+    filter:blur(10px);
     transition: all 0.4s linear;
 }
 .Gallery{
