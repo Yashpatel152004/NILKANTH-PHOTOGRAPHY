@@ -9,7 +9,6 @@
 <link rel=icon href=LOGO.png>
 <link rel=stylesheet href="Book-Event.css">
 <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
-<script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
 <title> Nilkanth Photography</title>
 <script>function myfunction(){document.getElementById("Loading").style.visibility="hidden"}function myalert(){alert("Are you sure for Book your order with Nilkanth photography")}function myback(){alert("Are you sure for cancel your order with Nilkanth photography")}function ordered(){alert("ordered successful , please wait until verification. ")}</script>
 </head>
@@ -29,16 +28,16 @@
 </div>
 <form action="" method=post>
 <div class=form-img>
-<img src=LOgo.webp class=img-fluid alt="">
+<img src="Logo.webp" class=img-fluid alt="">
 </div>
-<div class=form-details>
+<div class=form-details data-aos="zoom-in-up">
 <h3>Book Order</h3>
-<input name=EnterName id=EnterName required placeholder="Full name">
-<input type=tel type=number name=Contact id=Contact required placeholder="Contact no">
-<input type=email placeholder=Email required>
-<input placeholder=Adderess required>
+<input data-aos="zoom-in-up" name=EnterName id=EnterName required placeholder="Full name">
+<input data-aos="zoom-in-up" type=tel type=number name=Contact id=Contact required placeholder="Contact no">
+<input data-aos="zoom-in-up" type=email placeholder=Email required>
+<input data-aos="zoom-in-up" placeholder=Adderess required>
 <h3> Service </h3>
-<select name="" type=multiple required placeholder="Select Service">
+<select data-aos="zoom-in-up" name="" type=multiple required placeholder="Select Service">
 <option value=Pre-wedding>Pre-wedding</option>
 <option value=Photography>Photography</option>
 <option value=VideographVideography>VideographVideography</option>
@@ -49,10 +48,10 @@
 <option value="Personal PhtP">Personal Photography</option>
 </select>
 <h3>Tell us your photoshoot location</h3>
-<select name=Country id=Country plaaceholder=Country>
+<select data-aos="zoom-in-up" name=Country id=Country plaaceholder=Country>
 <option value=India aria-placeholder=india selected>India</option>
 </select>
-<select id=inputState placeholder=States required>
+<select data-aos="zoom-in-up" id=inputState placeholder=States required>
 <option value=SelectState>Select State</option>
 <option value="Andra Pradesh">Andra Pradesh</option>
 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -92,11 +91,11 @@
 <option value=Lakshadeep>Lakshadeep</option>
 <option value=Pondicherry>Pondicherry</option>
 </select>
-<select id=inputDistrict placeholder=City required>
+<select data-aos="zoom-in-up" id=inputDistrict placeholder=City required>
 <option value=District>City</option>
 </select>
-<input name=Location-info id=Location-info placeholder="Describe Location Info" class=Describe-box>
-<input type=date required placeholder=Date>
+<input data-aos="zoom-in-up" name=Location-info id=Location-info placeholder="Describe Location Info" class=Describe-box>
+<input data-aos="zoom-in-up" type=date required placeholder=Date>
 <div class=buttons>
 <button type=submit class=Book onsubmit=ordered()>Book</button>
 <button type=reset class=Reset>Reset</button>
