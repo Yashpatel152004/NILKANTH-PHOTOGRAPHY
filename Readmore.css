@@ -1,3 +1,4 @@
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 @import url(https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css);@import url(https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Cormorant+Garamond:wght@300&family=Didact+Gothic&family=Forum&family=Montserrat:wght@200&family=Nunito:wght@200&family=Pinyon+Script&family=Roboto+Condensed:wght@300&display=swap);.bx-arrow-back:before,.nav-heading{font-size:2rem}.card_box,nav{border-radius:1vh;width:100%}.card_box .Price,.card_box .Price-details{margin-top:1rem;height:auto;color:currentColor;background-color:transparent;content:none}
 :root{--heading-font:"pinyon script";--body-font:"Cormorant Garamond";--button-font:"montserrat"}body{font-size:1rem;font-family:var(--body-font);background-image:linear-gradient(90deg,#ffdede,#ffffda ,#e6f8ff)}
 *{-webkit-tap-highlight-color:transparent;-webkit-user-select:none}
