@@ -12,6 +12,7 @@
         font-family: var(--body-font);
         backdrop-filter: blur(10px);
     }
+.heading
 .bx:active{transform: rotate(180deg);transition: all 0.2s ease-in-out;}
 .Service-box .Price-box a,.Service-box .Price-box a i{font-family:var(--heading-font);text-decoration:none;letter-spacing:.2rem;color:var(--text-color)}.Service-box .Price-box{font-size:2rem;justify-content:center;align-items:center;display:flex;font-family:var(--heading-font)}.Service-box .Price-box a i{font-size:3rem}
 
