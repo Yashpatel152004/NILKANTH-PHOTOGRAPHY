@@ -9,13 +9,51 @@
 <body onload=myfunction()><img alt="" src="Gallery BG De.webp" class=BG> <img alt="" src="Gallery BG 9 16.webp"
         class=BG2>
     <div>
-        <nav>
-            <div class=nav-bar>
-                <div class=btn><a href=index.html><i class="bx bx-arrow-back"></i></a></div>
-                <div class=nav-logo><img alt="" src=LOGO.png></div>
-                <div class=Search><i class="bx bx-search" onclick=mysearch()></i></div>
+        ass="logo navbar-logo"></span>
+        <div class=menu>
+          <div class=logo-toggle><span class=logo>Nilkanth Photography</span><br><i class="bx bx-x siderbarClose"></i>
+          </div>
+          <ul class=nav-links>
+            <li><a href=index.html>Home</a>
+            <li><a href=#About>About</a>
+            <li><a href=#>Team Info</a></li>
+            <li><a href=Teaser.html>Teaser</a></li>
+            <li><a href=readmore.html>Services & Pricing</a>
+            <li><a href=BookOrder.html>Book Event</a>
+            <li><a href=Gallery.html>Gallery</a>
+            <li><a href=contact.html>Contact</a>
+          </ul>
+        </div>
+        <div class=darkLight-searchBox>
+          <div class=dark-light><i class="bx bx-moon moon"></i> <i class="bx bx-sun sun"></i></div>
+          <div class=searchBox>
+            <div class=searchToggle><i class="bx bx-x cancel"></i> <i class="bx bx-search search"></i></div>
+            <div class="search-field">
+              <div class="search"> <input type="text" onkeyup="myFunction()" id="myInput" list="input"
+                  placeholder="Search...">
+                <i class='bx bx-search'></i>
+              </div>
+              <div>
+                <ul id="myUL">
+                  <li class="field"><a href="index.html">Home</a></li>
+                  <li class="field"><a href="Readmore.html">Pricing</a></li>
+                  <li class="field"><a href="Readmore.html">Services</a></li>
+                  <li class="field"><a href="contact.html">Contact</a></li>
+                  <li class="field"><a href="BookOrder.html">Book Event</a></li>
+                  <li class="field"><a href="Gallery.html">Gallery</a></li>
+                  <li class="field"><a href="#team-info">Team Info</a></li>
+                  <li class="field"><a href="contact.html">Contact</a></li>
+                  <li class="field"><a href="#Videos">New Tesears</a></li>
+                  <li class="field"><a href="#Contact">Location</a></li>
+                  <li class="field"><a href="#team-info">Ashvin Patel</a></li>
+                </ul>
+              </div>
+
             </div>
-        </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
     </div>
     <div class=search-box id=Searching>
         <div class=search-bar>
@@ -150,3 +188,4 @@
             <div class=circle></div>
         </div>
     </div>
+<script src=script.js></script>
