@@ -191,21 +191,21 @@ button i {
 .W9-16 img {
   height: 100%
 }
-@media (width > 768px) {
+@media (max-width:768px) {
   .W9-16,
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: norepeat(8, 5vw)
   }
 }
-@media (width > 1000px) {
+@media (max-width:1000px) {
   .W9-16,
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: norepeat(5, 5vw)
   }
 }
-@media (width > 1500px) {
+@media (max-width:1500px) {
   .W9-16,
   .gallery {
     grid-template-rows: norepeat(5, 5vw)
@@ -217,14 +217,14 @@ button i {
     grid-template-columns: repeat(3, 1fr)
   }
 }
-@media (width > 2000px) {
+@media (max-width:2000px) {
   .W9-16,
   .gallery {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: norepeat(5, 5vw)
   }
 }
-@media (width > 2500px) {
+@media (max-width:2500px) {
   .W9-16,
   .gallery {
     grid-template-rows: norepeat(5, 5vw)
