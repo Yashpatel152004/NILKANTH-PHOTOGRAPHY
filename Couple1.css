@@ -55,6 +55,7 @@ body {
  backdrop-filter: blur(140px);
  background-color: var(--body-color);
   margin: 0
+  color:var(--text-color);
 }
 h1,
 h3 {
