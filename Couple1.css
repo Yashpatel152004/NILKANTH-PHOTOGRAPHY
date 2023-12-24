@@ -69,7 +69,7 @@ h3 {
   padding-top: 1%
 }
 p {
-  font-family: var(--body-font)
+  font-family: var(--body-font);
   color:var(--text-color);
 }
 
