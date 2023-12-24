@@ -30,7 +30,7 @@ button a {
 .button,
 button a,
 button i,
-nav {
+ {
   display: flex
 }
 .button,
@@ -38,8 +38,7 @@ nav {
   background-color: transparent
 }
 .gallery,
-body,
-nav {
+body {
   text-align: center
 }
 .W9-16,
@@ -71,6 +70,7 @@ h3 {
 }
 p {
   font-family: var(--body-font)
+  color:var(--text-color);
 }
 
 button a {
