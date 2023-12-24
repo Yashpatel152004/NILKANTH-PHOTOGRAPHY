@@ -68,11 +68,7 @@ h3 {
 p {
   font-family: var(--body-font)
 }
-nav {
-  justify-content: space-between;
-  padding: 1% 4%;
-  flex-wrap: wrap
-}
+
 button a {
   text-decoration: none;
   font-weight: 1000;
