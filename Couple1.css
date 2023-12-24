@@ -167,7 +167,8 @@ button i {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5%;
+  grid-gap: 5px;
+  padding:0px 5px;
   justify-content: center;
   align-items: center
 }
