@@ -6,6 +6,7 @@
     <meta name="Description" content="Nilkanth photography">
     <title>Raj & Rajvi</title>
     <link rel="stylesheet" href="Couple1.css">
+    <link rel=stylesheet href=NILK.css>
     <link rel="icon" href="LOGO.webp">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
@@ -14,9 +15,67 @@
 </head>
 <body>
 <nav>
-      <div>  <button class="button"><a href="index.html"><i class="bx bx-arrow-back"></i>Back</a></button></button></div>
-        <div class="text"><h3>Nilkanth Photography</h3></div>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="navLogo"><img src="LOGO.png" class="navbar-logo logo" alt=""></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <i class='bx bx-x siderbarClose'></i>
+                    <span class="logo ">Nilkanth Photography</span>
+
+
+                </div>
+                <ul class="nav-links ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#team-info">Team Info</a></li>
+                    <li><a href="#service">Services & Pricing</a></li>
+                    <li><a href="Teaser.html">Teaser</a></li>
+                    <li><a href="BookOrder.html">Book Event</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+
+
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <div class="search"> <input type="text" onkeyup="myFunction()" id="myInput" list="input"
+                                placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <div>
+                            <ul id="myUL">
+                                <li class="field"><a href="#About">Home</a></li>
+                                <li class="field"><a href="Readmore.html">Pricing</a></li>
+                                <li class="field"><a href="Readmore.html">Services</a></li>
+                                <li class="field"><a href="#Contact">Contact</a></li>
+                                <li class="field"><a href="BookOrder.html">Book Event</a></li>
+                                <li class="field"><a href="Gallery.html">Gallery</a></li>
+                                <li class="field"><a href="#team-info">Team Info</a></li>
+                                <li class="field"><a href="#Contact">Contact</a></li>
+                                <li class="field"><a href="Teaser.html">New Tesears</a></li>
+                                <li class="field"><a href="contact.html">Location</a></li>
+                                <li class="field"><a href="#team-info">Ashvin Patel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </nav>
+    
  <h2>Virat & Anushka</h2>
  <p>Here's to a long and happy marriage!"
      <br>
@@ -64,5 +123,6 @@
         <img  class="img-fluid" src="Gallery-1.webp"  alt="Image">
     </div>
     </div>
+    <script src=nav.js></script>
 </body>
 </html> 
