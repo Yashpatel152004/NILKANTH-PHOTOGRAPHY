@@ -16,13 +16,21 @@
 .divider{
   margin-top: 80px;
 }
-
+body{
+  padding: 0px 4px;
+  text-align: center;
+  background-color: white;
+}
+body.dark{
+  background-color: var(--body-color);
+}
 .couple-header {
-  border-top: 2px solid rgb(110, 165, 187);
+  border-top: 2px solid rgba(20, 211, 245, 0.596);
   border-bottom: 2px solid rgb(110, 168, 187);
-  border-left:2px solid rgb(100, 168, 187) ;
+  border-left:2px solid rgb(100, 167, 255) ;
   border-right: 2px solid rgb(110, 168, 187);
   color: var(--text-color);
+  text-shadow: 0.8px 0px 0px var(--text-color);
   width: 100%;
   border-radius: 5px;
   margin: auto;
@@ -80,11 +88,28 @@ p {
   .W9-16 img {
     height: 100%;
   }
-body{
-  padding: 0px 4px;
-  text-align: center;
-  
-}
+  .COMB{
+    display:flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:  1px;
+    margin:5px 5px ;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .COMB .img-fluid:first-child{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .COMB .img-fluid:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .COMB img{
+    border-radius: 0px;
+  }
 @media (max-width:2500px) {
     .W9-16,
     .gallery {
