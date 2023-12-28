@@ -16,11 +16,7 @@
 .divider{
   margin-top: 80px;
 }
-body{
-  padding: 0px 4px;
-  text-align: center;
-  
-}
+
 .couple-header {
   border-top: 2px solid rgb(110, 165, 187);
   border-bottom: 2px solid rgb(110, 168, 187);
@@ -84,6 +80,11 @@ p {
   .W9-16 img {
     height: 100%;
   }
+body{
+  padding: 0px 4px;
+  text-align: center;
+  
+}
 @media (max-width:2500px) {
     .W9-16,
     .gallery {
