@@ -155,3 +155,11 @@ p {
       grid-template-rows: norepeat(8, 5vw)
     }
   }
+@media (max-width:560px) {
+    .W9-16,
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: norepeat(auto, 5vw)
+    }
+  }
+
