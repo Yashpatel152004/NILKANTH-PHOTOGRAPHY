@@ -33,6 +33,8 @@ h6 {
 
 .gap {
   margin-top: 20px;
+  display:block;
+margin:auto;
 }
 
 body {
