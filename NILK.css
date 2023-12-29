@@ -215,7 +215,7 @@ section {
 }
 
 .Animation-box {
-    width: 200px;
+    width: 200px;e
     height: 200px;
     top: 50%;
     left: 50%;
@@ -1429,7 +1429,13 @@ footer .Contact .Contact-box .Gog:hover {
 footer .Contact .Gog:hover~h6 {
     transform: translateY(-10px)
 }
-
+.active,.nav-links li:hover {
+    
+    background-color: rgba(0, 204, 255, 0.116);
+    /* background-color: rgb(255, 255, 182); */
+    color: black;
+ }
+.bx:active{transform: rotate(90deg) scale(0);transition: all 0.2s ease-in-out; background-color:trasparent;}
 @media (max-width >=320px) {
     * {
         font-size: xx-small;
