@@ -2145,7 +2145,7 @@ footer .Contact .Gog:hover~h6 {
         color: var(--text-color);
         text-decoration: none;
         padding: 10px;
-        border-radius: 1vw
+        border-radius: 4px;
     }
 }
 
