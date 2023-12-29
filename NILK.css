@@ -1132,7 +1132,8 @@ body.dark .card .mail .i {
     text-decoration: none;
     width: max-content;
     display: flex;
-    padding: 1% 1% 1% 4%, font-weight: bold;
+    padding: 1% 1% 1% 4%;
+     font-weight: bold;
     font-family: 'Tenor Sans';
 }
 .footer-icons .links {
