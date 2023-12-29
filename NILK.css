@@ -2,6 +2,7 @@
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Didact+Gothic&family=Montserrat:wght@200&family=Nunito:wght@200&family=Oswald:wght@700&family=Quicksand&family=Roboto+Condensed:wght@300&family=Tenor+Sans&display=swap');
 @import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
+
 *,
 h1,
 h2,
@@ -10,6 +11,7 @@ h4 {
     font-weight: 400;
     -webkit-overflow-scrolling: touch;
 }
+
 .navLogo,
 .video-box,
 h1,
@@ -18,16 +20,19 @@ h3,
 h4 {
     text-align: center
 }
+
 .Slider-Container,
 .navLogo {
     justify-content: center;
     display: flex;
     overflow: hidden
 }
+
 .About .details,
 a {
     background-color: transparent
 }
+
 .dark-light i.sun,
 .dark-light.active i.moon,
 .searchBox .search-field,
@@ -36,6 +41,7 @@ a {
     opacity: 0;
     pointer-events: none
 }
+
 .Team h2,
 .container .box-container .box p,
 .footer-heading h2,
@@ -44,12 +50,14 @@ a {
 .footer-name h1 {
     font-family: var(--heading-font)
 }
+
 .footer-update .footer-gallery img,
 body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
 }
+
 .card a,
 .footer-details a,
 .footer-details li a,
@@ -58,19 +66,23 @@ a,
 nav .nav-bar .logo a {
     text-decoration: none
 }
+
 @font-face {
     font-family: Optima;
     src: url(OPTIMA.woff)
 }
+
 body,
 html {
     overflow-y: auto;
     overflow-x: hidden;
     font-family: "Cormorant Garamond"
 }
+
 hr {
     margin: 1% 0
 }
+
 h1,
 h2,
 h3,
@@ -78,6 +90,7 @@ h4 {
     font-family: Oswald;
     color: var(--text-color)
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -86,11 +99,13 @@ h4 {
     font-family: 'Cormorant Garamond';
     -webkit-tap-highlight-color: transparent
 }
+
 body,
 body.dark .About,
 body.dark .Service-box .container {
     background-color: var(--body-color)
 }
+
 .search-field::before,
 .searchBox .search-field,
 footer,
@@ -98,6 +113,7 @@ nav,
 nav .nav-bar {
     background-color: var(--nav-color)
 }
+
 :root {
     --body-color: #fcf9f4;
     --nav-color: #ffffffb0;
@@ -112,22 +128,27 @@ nav .nav-bar {
     --body-font: "Cormorant Garamond";
     --button-font: "open sans", "montserrat"
 }
+
 body {
     height: 100%;
     font-family: 'Cormorant Garamond', sans-serif
 }
+
 .container {
     width: 100vw
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto
 }
+
 .About,
 .Team,
 .team-box {
     max-width: 2000px
 }
+
 .Animation-body {
     position: fixed;
     transition: 2s ease-in;
@@ -136,11 +157,13 @@ body {
     height: 100%;
     background-color: #ffffffd5
 }
+
 .Animation-box,
 .dot {
     position: absolute;
     margin: auto
 }
+
 .video-box {
     width: 100%;
     height: auto;
@@ -148,6 +171,7 @@ body {
     margin: 1% 0;
     padding: 1%
 }
+
 .videos {
     display: grid;
     grid-template-columns: auto auto;
@@ -156,20 +180,24 @@ body {
     grid-auto-flow: row;
     justify-content: center
 }
+
 .navLogo,
 section {
     align-items: center
 }
+
 .video-box h1 {
     margin: 1% 0;
     margin-top: 90px;
     color: var(--text-color)
 }
+
 .videos video {
     max-width: 100%;
     border-radius: 10px;
     transition: 2s linear
 }
+
 .Contact h2,
 .video-box h1 {
     border-top: 2px solid var(--text-color);
@@ -180,10 +208,12 @@ section {
     margin-top: 90px;
     margin-bottom: 2rem;
 }
+
 .video-box video:hover {
     transform: scale(1.01);
     transition: .8s
 }
+
 .Animation-box {
     width: 200px;
     height: 200px;
@@ -194,16 +224,19 @@ section {
     animation: 1s ease-in-out infinite rotate-move;
     transition: .4s linear
 }
+
 .dot,
 .navLogo,
 nav {
     height: 70px
 }
+
 .navLogo img {
     max-width: 50%;
     display: flex;
     margin: auto
 }
+
 .dot {
     width: 70px;
     border-radius: 10%;
@@ -213,6 +246,7 @@ nav {
     transform: scale(1.4);
     animation: 2s ease-in-out infinite rotate-move
 }
+
 .Team h2,
 .card .mail i,
 .footer-details a,
@@ -228,89 +262,142 @@ nav .nav-bar .logo a,
 nav .nav-bar .sidebarOpen {
     color: var(--text-color)
 }
+
+.nav-links li:nth-child(5) {
+    border-top: 1px solid #2b9fe2;
+    animation: 1s linear infinite alternate-reverse Border-Gallery;
+    transition: .4s ease-out
+}
+
+@keyframes Border-Gallery {
+    0% {
+        border-top: 1px solid #f5f5f5
+    }
+
+    100% {
+        border-top: 1px solid #35e1ff;
+        transform: scale(1.01);
+        box-shadow: 0 0 8px #87ceeb inset
+    }
+}
+
+@keyframes Border-Book {
+    0% {
+        border-top: 1px solid #f5f5f5
+    }
+
+    100% {
+        border-top: 1px solid #96ff96;
+        transform: scale(1.01);
+        box-shadow: 0 0 8px rgba(157, 255, 178, .801) inset
+    }
+}
+
 .dot-3 {
     background-color: #9cd2ff;
     animation: 1s infinite dot-3-move, 6s infinite index
 }
+
 .dot-2 {
     background-color: #ff8383;
     animation: 1s infinite dot-2-move, 6s -4s infinite index
 }
+
 .dot-1 {
     background-color: #ffe285;
     animation: 1s infinite dot-1-move, 6s -2s infinite index
 }
+
 @keyframes dot-3-move {
     20% {
         transform: scale(1)
     }
+
     45% {
         transform: translateY(-18px) scale(.45)
     }
+
     60%,
     80% {
         transform: translateY(-90px) scale(.45)
     }
+
     100% {
         transform: translateY(0) scale(1.5)
     }
 }
+
 @keyframes dot-2-move {
     20% {
         transform: scale(1)
     }
+
     45% {
         transform: translate(-16px, 12px) scale(.45)
     }
+
     60%,
     80% {
         transform: translate(-80px, 60px) scale(.45)
     }
+
     100% {
         transform: translateY(0) scale(1.5)
     }
 }
+
 @keyframes dot-1-move {
     20% {
         transform: scale(1)
     }
+
     45% {
         transform: translate(16px, 12px) scale(.45)
     }
+
     60%,
     80% {
         transform: translate(80px, 60px) scale(.45)
     }
+
     100% {
         transform: translateY(0) scale(1.5)
     }
 }
+
 @keyframes rotate-move {
     55% {
         transform: translate(-50%, -50%) rotate(0)
     }
+
     100%,
     80% {
         transform: translate(-50%, -50%) rotate(360deg)
     }
 }
+
 @keyframes index {
+
     0%,
     100% {
         z-index: 3
     }
+
     33.3% {
         z-index: 2
     }
+
     66.6% {
         z-index: 1
     }
 }
+
 .icon-box,
 nav {
     position: fixed;
     z-index: 100
 }
+
 .icon-box {
     width: 7vh;
     height: 7vh;
@@ -322,49 +409,59 @@ nav {
     box-shadow: 0 0 64px rgba(0, 0, 0, .342);
     filter: saturate(400%)
 }
+
 .Slider-Container,
 body.dark .box-container .box {
     background-color: #fff
 }
+
 .card,
 .nav-links li a,
 .searchBox,
 nav .nav-bar {
     position: relative
 }
+
 .About,
 .logo {
     border-radius: 1vh
 }
+
 .icon-box:hover {
     box-shadow: 0 0 64px #0de40d;
     transform: scale(1.03) rotate(360deg);
     transition: .4s ease-in-out
 }
+
 .icon-box img {
     opacity: 80%
 }
+
 .logo {
     filter: contrast(140%) grayscale(100%) brightness(16%);
     margin: 4vh 0
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 2rem;
     filter: drop-shadow(0px 0px 2px --text-color)
 }
+
 .Slider-Container {
     width: 100%;
     height: 320px;
     margin-top: 70px;
     box-shadow: 0 0 100px rgba(255, 255, 255, .26) inset
 }
+
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: var(--text-color);
     filter: brightness(100%);
     font-size: 1rem;
     margin: 4px
 }
+
 .Slider-Container .img-box img {
     max-width: 100%;
     height: auto;
@@ -372,6 +469,7 @@ nav .nav-bar {
     pointer-events: none;
     filter: saturate(110%)
 }
+
 .Slider-Container .img-box {
     height: 320px;
     display: flex;
@@ -381,6 +479,7 @@ nav .nav-bar {
     align-items: center;
     backdrop-filter: blur(10%)
 }
+
 body.dark {
     --body-color: #18191A;
     --nav-color: #242526;
@@ -392,22 +491,26 @@ body.dark {
     --con-color-1: #394867;
     --con-color-2: #212A3F
 }
+
 nav {
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 0 32px rgba(29, 29, 29, .466)
 }
+
 section {
     justify-content: center;
     display: flex
 }
+
 .About,
 nav .nav-bar {
     display: flex;
     align-items: center;
     width: 100%
 }
+
 .About {
     text-align: left;
     background-image: linear-gradient(60deg, #caddffec, #ffffffde, #fdd5fdd5);
@@ -416,43 +519,53 @@ nav .nav-bar {
     font-size: 16px;
     font-weight: 1000
 }
+
 .Team,
 footer {
     display: block
 }
+
 .About .img {
     filter: saturate(200%) grayscale(0%)
 }
+
 .About .details {
     backdrop-filter: blur(80px);
     border-left: 1px solid var(--text-color);
     padding: 8px
 }
+
 .search-field input,
 .searchToggle.active~.search-field ul li {
     background-color: var(--search-bar);
     list-style-type: none;
     width: 100%
 }
+
 .SErvice {
     margin-top: 2%
 }
+
 body.dark .About {
     background-image: none;
     transition: .4s ease-in-out;
     backdrop-filter: blur(10px)
 }
+
 body.dark .Service-box .container {
     color: #000;
     background-image: none
 }
+
 body.dark nav {
     border: 1px solid #393838
 }
+
 body.dark .logo {
     filter: brightness(800%) grayscale(100%) contrast(400%);
     color: #fff
 }
+
 nav .nav-bar {
     height: 100%;
     margin: 0 auto;
@@ -460,6 +573,7 @@ nav .nav-bar {
     justify-content: space-between;
     text-align: center
 }
+
 nav .nav-bar .sidebarOpen {
     font-size: 25px;
     padding: 5px;
@@ -467,26 +581,31 @@ nav .nav-bar .sidebarOpen {
     display: none;
     margin-left: 5%
 }
+
 nav .nav-bar .logo a {
     font-size: 25px;
     font-weight: 500;
     display: block
 }
+
 .menu .logo-toggle {
     display: none
 }
+
 .nav-bar .nav-links {
     display: flex;
     align-items: center;
     padding: 1px;
     text-align: center
 }
+
 .searchBox .search-field,
 .searchToggle.active~.search-field ul {
     padding: 3px;
     border-radius: 6px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .1)
 }
+
 .nav-bar .nav-links li {
     margin: 0 8px;
     list-style: none;
@@ -498,11 +617,13 @@ nav .nav-bar .logo a {
     box-shadow: 0 0 4px rgba(224, 224, 224, .719) inset;
     transition: .2s ease-in-out
 }
+
 .card,
 .card .profile-pic img,
 .card .profile-pic svg {
     transition: .5s ease-in-out
 }
+
 .nav-links li a {
     font-size: 17px;
     padding: 16px;
@@ -512,18 +633,22 @@ nav .nav-bar .logo a {
     font-variant: all-petite-caps;
     letter-spacing: 1px
 }
+
 .nav-links li:hover {
     transform: scale(1.05);
     color: #ccc;
     background-color: #77777700
 }
+
 .nav-links li:hover a::before {
     opacity: 1
 }
+
 .nav-bar .darkLight-searchBox {
     display: flex;
     align-items: center
 }
+
 .darkLight-searchBox .dark-light,
 .darkLight-searchBox .searchToggle {
     height: 40px;
@@ -533,6 +658,7 @@ nav .nav-bar .logo a {
     justify-content: center;
     margin: 0 5px
 }
+
 .dark-light i,
 .searchToggle i {
     position: absolute;
@@ -541,11 +667,13 @@ nav .nav-bar .logo a {
     cursor: pointer;
     transition: .3s
 }
+
 .dark-light.active i.sun,
 .searchToggle.active i.cancel {
     opacity: 1;
     pointer-events: auto
 }
+
 .searchBox .search-field {
     position: absolute;
     bottom: -85px;
@@ -556,11 +684,13 @@ nav .nav-bar .logo a {
     align-items: center;
     transition: .3s
 }
+
 .searchToggle.active~.search-field {
     bottom: -74px;
     opacity: 1;
     pointer-events: auto
 }
+
 .searchToggle.active~.search-field .search {
     justify-content: space-between;
     display: flex;
@@ -571,6 +701,7 @@ nav .nav-bar .logo a {
     list-style: none;
     appearance: none
 }
+
 .searchToggle.active~.search-field ul {
     display: block;
     width: 100%;
@@ -581,6 +712,7 @@ nav .nav-bar .logo a {
     list-style-type: none;
     margin-top: 1rem
 }
+
 .searchToggle.active~.search-field ul li {
     font-size: 1.2rem;
     color: var(--text-color);
@@ -591,6 +723,7 @@ nav .nav-bar .logo a {
     transition: .3s ease-in-out;
     font-family: var(--body-font)
 }
+
 .searchToggle.active~.search-field ul li a {
     color: var(--text-color);
     margin-left: 6px;
@@ -598,6 +731,7 @@ nav .nav-bar .logo a {
     font-family: var(--heading-font);
     width: 300px
 }
+
 .search-field::before {
     content: '';
     position: absolute;
@@ -608,6 +742,7 @@ nav .nav-bar .logo a {
     transform: rotate(-45deg);
     z-index: -1
 }
+
 .search-field input {
     height: 100%;
     padding: 0 45px 0 15px;
@@ -620,6 +755,7 @@ nav .nav-bar .logo a {
     appearance: none;
     font-family: Quicksand
 }
+
 .search-field i {
     position: absolute;
     color: var(--nav-color);
@@ -627,6 +763,7 @@ nav .nav-bar .logo a {
     font-size: 22px;
     cursor: pointer
 }
+
 .Service-box .container {
     background: linear-gradient(-100%, rgba(255, 184, 184, .925), #feffab, #f5f5f5, rgba(183, 232, 255, .774));
     padding: 4% 4% 100px;
@@ -635,12 +772,14 @@ nav .nav-bar .logo a {
     filter: saturate(110%);
     width: 100vw
 }
+
 .container .heading {
     text-align: center;
     padding-bottom: 15px;
     color: var(--con-color);
     text-shadow: 0 5px 10px rgba(0, 0, 0, .2)
 }
+
 .container .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
@@ -648,6 +787,7 @@ nav .nav-bar .logo a {
     justify-content: center;
     margin-top: 1%
 }
+
 .Service-box .Service-Price {
     text-decoration: none;
     color: #6bdFd7a1;
@@ -661,9 +801,15 @@ nav .nav-bar .logo a {
     font-family: oswald;
     backdrop-filter: blur(10px)
 }
+
 video[poster] {
     max-width: 100%;
     background-size: cover
+}
+
+.bx:active {
+    transform: rotate(120deg) scale(0);
+    transition: .1s ease-in-out
 }
 
 .Service-box .Price-box a,
@@ -673,6 +819,7 @@ video[poster] {
     letter-spacing: .2rem;
     color: var(--text-color)
 }
+
 .Service-box .Price-box {
     font-size: 2rem;
     justify-content: center;
@@ -680,12 +827,15 @@ video[poster] {
     display: flex;
     font-family: var(--heading-font)
 }
+
 .Service-box .Price-box a i {
     font-size: 3rem
 }
+
 body.dark .container .box-container .box {
     background: #000
 }
+
 .container .box-container .box {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     border-radius: 1vh;
@@ -694,9 +844,11 @@ body.dark .container .box-container .box {
     padding: 30px 20px;
     width: 100%
 }
+
 .container .box-container .box img {
     height: 80px
 }
+
 .container .box-container .box h3 {
     font-size: 1.6rem;
     padding: 10px 0;
@@ -705,6 +857,7 @@ body.dark .container .box-container .box {
     font-weight: 800;
     font-variant: all-petite-caps
 }
+
 .container .box-container .box p {
     font-size: 15px;
     line-height: 1.8;
@@ -713,6 +866,7 @@ body.dark .container .box-container .box {
     font-variant: all-petite-caps;
     font-weight: 700
 }
+
 .container .box-container .box .btn {
     box-shadow: 0 1px 2px #424242;
     border: 2px transparent;
@@ -727,16 +881,19 @@ body.dark .container .box-container .box {
     bottom: 1px;
     font-family: var(--button-font)
 }
+
 .container .box-container .box .btn:hover {
     text-shadow: 0 0 4px #fff;
     background-color: #363636;
     box-shadow: 0 0 16px #2c2c2c
 }
+
 .container .box-container .box:hover {
     text-shadow: 0 0 .5px var(--text-color);
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     transform: scale(1.03)
 }
+
 footer {
     backdrop-filter: blur(100px);
     justify-content: center;
@@ -749,24 +906,29 @@ footer {
     padding: 10px;
     background-attachment: fixed
 }
+
 .Team,
 .footer-update .footer-gallery {
     justify-content: center;
     text-align: center
 }
+
 .Team {
     width: 100%;
     height: auto;
     margin-top: 1px
 }
+
 .Team .Team-Cont {
     padding: 4%
 }
+
 .Team .Team-Cont hr {
     width: 80%;
     display: flex;
     margin: auto
 }
+
 .team-box {
     width: 100%;
     flex-wrap: wrap;
@@ -777,10 +939,12 @@ footer {
     gap: 10px;
     padding: 1%
 }
+
 .Team h2 {
     color: var(--text-color);
     font-family: var(--heading-font)
 }
+
 .card {
     width: 240px;
     height: 280px;
@@ -791,6 +955,7 @@ footer {
     display: block;
     box-shadow: #604b4a30 0 70px 30px -50px
 }
+
 .card .mail {
     position: absolute;
     right: 2rem;
@@ -798,15 +963,18 @@ footer {
     background: 0 0;
     border: none
 }
+
 .card .mail i {
     stroke: var(--text-color);
     font-size: 1.4rem;
     stroke-width: 3px
 }
+
 .card .mail i:hover,
 body.dark .card .mail .i {
     color: red
 }
+
 .card .profile-pic {
     position: absolute;
     width: calc(100% - 6px);
@@ -819,6 +987,7 @@ body.dark .card .mail .i {
     overflow: hidden;
     transition: .5s ease-in-out .2s, z-index .5s ease-in-out .2s
 }
+
 .card .profile-pic img {
     -o-object-fit: cover;
     object-fit: cover;
@@ -827,6 +996,7 @@ body.dark .card .mail .i {
     -o-object-position: 0px 0px;
     object-position: 0px 0px
 }
+
 .card .profile-pic svg {
     width: 100%;
     height: 100%;
@@ -836,6 +1006,7 @@ body.dark .card .mail .i {
     object-position: 0px 0px;
     transform-origin: 45% 20%
 }
+
 .card .bottom {
     position: absolute;
     bottom: 3px;
@@ -850,6 +1021,7 @@ body.dark .card .mail .i {
     transition: .5s cubic-bezier(.645, .045, .355, 1);
     backdrop-filter: blur(2px)
 }
+
 .card .bottom .content {
     position: absolute;
     bottom: 0;
@@ -857,6 +1029,7 @@ body.dark .card .mail .i {
     right: 1.5rem;
     height: 160px
 }
+
 .card .bottom .content .name {
     display: block;
     font-size: 1.2rem;
@@ -865,15 +1038,18 @@ body.dark .card .mail .i {
     font-family: var(--heading-font), nunito;
     margin-top: 1px
 }
+
 .Contact h2 {
     margin-top: 90px;
 }
+
 .Contact .Contact-box .Gog a,
 .footer-details li a,
 .footer-icons .links a {
     font-family: var(--body-font);
     color: var(--text-color)
 }
+
 .card .bottom .content .salt {
     display: block;
     color: #fff;
@@ -881,18 +1057,21 @@ body.dark .card .mail .i {
     margin: 0 1px;
     font-family: var(--body-font)
 }
+
 .card .bottom .content .name-bins h4 {
     display: block;
     font-family: optima;
     color: #fff;
     margin-top: 2px
 }
+
 .card .bottom .content .about-me {
     display: block;
     font-size: .9rem;
     color: #fff;
     font-family: optima
 }
+
 .card .bottom .bottom-bottom {
     position: absolute;
     bottom: 1rem;
@@ -902,13 +1081,16 @@ body.dark .card .mail .i {
     align-items: center;
     justify-content: space-between
 }
+
 .card .bottom .bottom-bottom .social-links-container {
     display: flex;
     gap: 1rem
 }
+
 .card a {
     color: #000
 }
+
 .card .bottom .bottom-bottom .social-links-container i {
     height: 20px;
     fill: white;
@@ -916,11 +1098,13 @@ body.dark .card .mail .i {
     color: #fff;
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, .822))
 }
+
 .card .bottom .bottom-bottom .social-links-container i:hover {
     color: #96d5ff;
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, .822));
     transform: scale(1.1)
 }
+
 .card .bottom .bottom-bottom .button {
     background: #fff;
     color: #fbb9b6;
@@ -931,21 +1115,26 @@ body.dark .card .mail .i {
     box-shadow: rgba(165, 132, 130, .1333333333) 0 5px 5px 0;
     font-family: var(--button-font)
 }
+
 .card .bottom .bottom-bottom .button:hover {
     background: #a6deff;
     color: #fff
 }
+
 .card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .192)
 }
+
 .dark-light.active .card:hover {
     box-shadow: 0 0 10px rgba(245, 245, 245, .192)
 }
+
 .card:hover .bottom {
     top: 20%;
     border-radius: 80px 29px 29px;
     transition: .5s cubic-bezier(.645, .045, .355, 1) .2s
 }
+
 .card:hover .profile-pic {
     width: 100px;
     height: 100px;
@@ -958,15 +1147,18 @@ body.dark .card .mail .i {
     box-shadow: rgba(96, 75, 74, .1882352941) 0 5px 5px 0;
     transition: .5s ease-in-out, z-index .5s ease-in-out .1s
 }
+
 .card:hover .profile-pic:hover {
     transform: scale(1.05)
 }
+
 .card:hover .profile-pic img {
     transform: scale(1.5);
     background-position: center;
     background-size: cover;
     transition: .5s ease-in-out .5s
 }
+
 .footer .footer-update {
     width: 100%;
     height: auto;
@@ -977,22 +1169,27 @@ body.dark .card .mail .i {
     margin-top: 4%;
     margin-bottom: 1%
 }
+
 .footer-update .footer-gallery img {
     border-radius: .5vh
 }
+
 .footer-gallery h4 {
     width: 100%;
     display: block;
     display: flex
 }
+
 .footer-update .footer-gallery img:hover {
     transform: scale(1.4);
     transition: .4s ease-in
 }
+
 .footer-update .footer-gallery .G-box {
     width: 100%;
     overflow: hidden
 }
+
 .footer-update .footer-gallery {
     width: 65vw;
     background-color: transparent;
@@ -1008,6 +1205,7 @@ body.dark .card .mail .i {
     overflow: hidden;
     height: auto
 }
+
 .footer-update .form {
     width: 30vw;
     background-color: transparent;
@@ -1019,10 +1217,12 @@ body.dark .card .mail .i {
     display: block;
     padding: 10px
 }
+
 .footer-update .form form {
     display: block;
     justify-content: space-around
 }
+
 .footer-update input {
     outline: 0;
     width: 60%;
@@ -1038,6 +1238,7 @@ body.dark .card .mail .i {
     filter: saturate(400%);
     font-family: var(--button-font)
 }
+
 .footer-update button {
     width: 60%;
     padding: 1%;
@@ -1056,11 +1257,13 @@ body.dark .card .mail .i {
     font-weight: 400;
     backdrop-filter: blur(10px)
 }
+
 .footer-update input:focus {
     background-color: #90e9ffd8;
     filter: saturate(110%);
     transition: .4s ease-in
 }
+
 .footer-update button:hover {
     background-color: #d0f8ffc2;
     transition: .4s ease-in;
@@ -1069,6 +1272,7 @@ body.dark .card .mail .i {
     backdrop-filter: none;
     filter: none
 }
+
 .footer-icons .icon-box-2 {
     display: flex;
     background-color: transparent;
@@ -1080,12 +1284,14 @@ body.dark .card .mail .i {
     height: auto;
     margin: auto
 }
+
 .footer-icons .icon-box-2 ul {
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center
 }
+
 .footer-icons {
     display: flex;
     width: 100%;
@@ -1095,6 +1301,7 @@ body.dark .card .mail .i {
     margin-bottom: 2%;
     background-attachment: fixed
 }
+
 .footer-icons div {
     width: 100%;
     margin: 1%;
@@ -1102,18 +1309,21 @@ body.dark .card .mail .i {
     flex-wrap: wrap;
     padding: .5%
 }
+
 .footer-icons .links,
 .footer-icons .links ul {
     justify-content: center;
     text-align: center;
     display: flex
 }
+
 .footer-icons li {
     list-style: none;
     margin-left: 10%;
     margin-top: 1%;
     width: 100%
 }
+
 .footer-icons .links li:hover a {
     transform: scale(1.03);
     border-radius: .4vh;
@@ -1121,23 +1331,26 @@ body.dark .card .mail .i {
     padding: 1px;
     color: #7196eb
 }
+
 .footer-details li a img,
 .footer-icons .links ul {
     width: 100%
 }
+
 .footer-icons .links a {
     text-decoration: none;
     width: max-content;
     display: flex;
-    padding: 1% 1% 1% 4%;
-     font-weight: bold;
+    padding: 1% 1% 1% 4%, font-weight: bold;
     font-family: 'Tenor Sans';
 }
+
 .footer-icons .links {
     align-items: center;
     padding: 4%;
     width: 100%
 }
+
 .Contact,
 .footer-details {
     width: 100%;
@@ -1145,6 +1358,7 @@ body.dark .card .mail .i {
     text-align: center;
     display: block
 }
+
 .footer-icons .icon-box-2 li {
     width: 9vh;
     height: 9vh;
@@ -1156,27 +1370,32 @@ body.dark .card .mail .i {
     display: flex;
     padding: 4%
 }
+
 .footer-icons .icon-box-2 li a {
     width: 100%;
     height: auto;
     padding: 4%
 }
+
 .Contact .Contact-box li a img,
 .footer-icons .icon-box-2 li a img {
     width: 100%;
     height: auto;
     filter: saturate(240%)
 }
+
 .footer-icons .icon-box-2 li:hover {
     transition: .2s ease-in;
     transform: translateY(-4px) scale(1.09);
     filter: saturate(100%) brightness(120%)
 }
+
 .footer-details {
     align-items: center;
     margin-top: 4%;
     margin-bottom: 4%
 }
+
 .footer-details .back {
     width: 5vh;
     height: 5vh;
@@ -1187,14 +1406,17 @@ body.dark .card .mail .i {
     margin: auto auto 1%;
     box-shadow: 0 0 8px rgba(117, 117, 117, .185)
 }
+
 .footer-details li a {
     width: 100%;
     height: auto
 }
+
 .Contact {
     align-items: center;
     margin: auto
 }
+
 .Contact .Contact-box {
     height: auto;
     margin: auto;
@@ -1205,6 +1427,7 @@ body.dark .card .mail .i {
     align-items: center;
     padding-top: 1%
 }
+
 footer .Contact .Contact-box .Gog {
     width: 100%;
     max-height: 100%;
@@ -1216,6 +1439,7 @@ footer .Contact .Contact-box .Gog {
     overflow: hidden;
     display: block
 }
+
 .Contact .Contact-box .Gog a {
     width: 100%;
     height: auto;
@@ -1223,30 +1447,25 @@ footer .Contact .Contact-box .Gog {
     margin: auto;
     display: block
 }
+
 footer .Contact .Contact-box .Gog a img:hover {
     filter: saturate(200%) brightness(116%)
 }
+
 footer .Contact .Contact-box .Gog:hover {
     transform: translateY(-4px) scale(1.05)
 }
+
 footer .Contact .Gog:hover~h6 {
     transform: translateY(-10px)
 }
-.active,.nav-links li:hover {
-    background-color: rgba(0, 204, 255, 0.185);
-    /* background-color: rgb(255, 255, 182); */
-    color: black;
- }
-.bx:active {
-    transform: rotate(120deg) scale(0);
-    transition: .1s ease-in-out;
-    background-color:transparent;
-}
+
 @media (max-width >=320px) {
     * {
         font-size: xx-small;
         -webkit-tap-highlight-color: transparent
     }
+
     .container .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 0.8fr));
@@ -1255,10 +1474,12 @@ footer .Contact .Gog:hover~h6 {
         justify-content: center
     }
 }
+
 @media (max-width:768px) {
     * {
         -webkit-tap-highlight-color: transparent
     }
+
     .Service-box .Service-Price {
         text-decoration: none;
         color: #6bdfd7a1;
@@ -1273,26 +1494,31 @@ footer .Contact .Gog:hover~h6 {
         backdrop-filter: blur(10px);
         font-variant: all-petite-caps
     }
+
     .container .box-container .box img {
         height: 50px;
         padding: 1%;
         border-radius: .8vh
     }
+
     .container .box-container {
         display: grid;
         gap: 20px
     }
+
     .footer .footer-gallery {
         width: 95%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: norepeat(5, 5vw);
         padding: 0
     }
+
     .team-box {
         display: flex;
         display: grid;
         grid-template-columns: repeat(2, 1fr)
     }
+
     .videos {
         display: grid;
         grid-template-columns: auto;
@@ -1302,38 +1528,47 @@ footer .Contact .Gog:hover~h6 {
         justify-content: center
     }
 }
+
 @media (max-width:450px) {
+
     .About,
     .details {
         background-color: rgba(255, 255, 255, .603)
     }
+
     .footer .Icon-box,
     .footer a {
         width: 6vh;
         height: 6vh
     }
+
     body,
     html {
         scroll-behavior: smooth;
         scroll-snap-type: proximity;
         background-attachment: fixed
     }
+
     * {
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: none
     }
+
     .About {
         background-image: none
     }
+
     .details {
         margin-top: 20vh;
         border-left: .8vh solid rgba(71, 71, 71, .075);
         backdrop-filter: blur(100px)
     }
+
     .container {
         background-image: linear-gradient(90deg, rgba(255, 255, 167, .493), rgba(255, 255, 255, .445), rgba(255, 222, 152, .411), rgba(176, 239, 255, .699));
         backdrop-filter: opacity(110%)
     }
+
     .container .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(130px, 0.8fr));
@@ -1342,6 +1577,7 @@ footer .Contact .Gog:hover~h6 {
         margin: auto;
         overflow-wrap: break-word
     }
+
     .container .box-container .box {
         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
         border-radius: 5px;
@@ -1349,21 +1585,25 @@ footer .Contact .Gog:hover~h6 {
         text-align: center;
         padding: 16px
     }
+
     .container .box-container .box img {
         height: 50px
     }
+
     .container .box-container .box h3 {
         font-size: 18px;
         padding: 8px 0;
         color: var(--text-color);
         font-weight: 700
     }
+
     .container .box-container .box p {
         font-size: 12px;
         line-height: 1.8;
         color: var(--text-color);
         font-family: var(--service-box-p-font)
     }
+
     .container .box-container .box .btn {
         margin-top: 10px;
         display: inline-block;
@@ -1373,19 +1613,24 @@ footer .Contact .Gog:hover~h6 {
         border-radius: 5px;
         padding: 8px 20px
     }
+
     .container .box-container .box .btn:hover {
         letter-spacing: 1px
     }
+
     .container .box-container .box:hover {
         box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
         transform: scale(1.03)
     }
+
     .card:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, .192)
     }
+
     .dark-light.active .card:hover {
         box-shadow: 0 0 10px rgba(245, 245, 245, .192)
     }
+
     .footer-icons {
         width: 100%;
         padding: .8%;
@@ -1393,6 +1638,7 @@ footer .Contact .Gog:hover~h6 {
         justify-content: center;
         margin: 10px
     }
+
     .footer .Icon-box {
         border-radius: 8vh;
         justify-content: center;
@@ -1400,30 +1646,36 @@ footer .Contact .Gog:hover~h6 {
         align-items: center;
         padding: 0
     }
+
     .footer-icon-title {
         margin: auto;
         display: flex;
         justify-content: center
     }
+
     .footer-details-Nilakanth-photography {
         margin: auto;
         display: flex;
         padding-top: 2%
     }
+
     .footer-img {
         width: 100%;
         filter: saturate(200%);
         height: auto
     }
+
     .icon-box {
         width: 8vh;
         height: 8vh
     }
+
     .Icon-box-img {
         border-radius: 1vh;
         width: 4vh;
         height: 4vh
     }
+
     .footer-update .footer-gallery {
         display: block;
         display: grid;
@@ -1435,26 +1687,33 @@ footer .Contact .Gog:hover~h6 {
         padding: 2%;
         width: 100%
     }
+
     .footer .footer-icons .links li:hover {
         border: none
     }
+
     .footer .links li:hover a {
         transform: translate(-4px)
     }
 }
+
 @media (max-width:960px) {
+
     .navLogo,
     .navLogo img {
         display: flex
     }
+
     *,
     .menu {
         transition: .2s ease-in-out
     }
+
     .About,
     .menu::before {
         color: var(--text-color)
     }
+
     * {
         scroll-behavior: smooth;
         background-attachment: fixed;
@@ -1462,53 +1721,64 @@ footer .Contact .Gog:hover~h6 {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent
     }
+
     .Slider-Container {
         height: 200px;
         padding: 0
     }
+
     .Slider-Container .img-box {
         height: 200px;
         opacity: 90%
     }
+
     .swiper-pagination {
         background-color: #ffffff00;
         display: none
     }
+
     .About,
     .About .details,
     .Service-box,
     .nav-bar .nav-links a:focus {
         background-color: transparent
     }
+
     .navLogo img {
         margin: auto
     }
+
     .Service {
         min-width: 10vw;
         height: auto;
         font-size: 12px;
         padding: 8%
     }
+
     nav .nav-bar .sidebarOpen {
         display: block
     }
+
     .nav-bar .nav-links {
         justify-content: space-evenly;
         padding: 0;
         margin: 0;
         display: inline-block
     }
+
     .nav-bar .nav-links li a {
         padding: 0;
         margin: auto;
         color: #f5f5f5;
         width: 20vh
     }
+
     .Team hr,
     .card a,
     .nav-links li:hover a {
         color: #000
     }
+
     .nav-bar .nav-links li {
         margin-top: 3%;
         background-color: #000;
@@ -1517,9 +1787,11 @@ footer .Contact .Gog:hover~h6 {
         border-radius: 10vw;
         transition: .2s
     }
+
     .nav-bar .nav-links a:focus {
         box-shadow: none
     }
+
     .About {
         text-align: left;
         align-items: center;
@@ -1529,10 +1801,12 @@ footer .Contact .Gog:hover~h6 {
         justify-content: space-evenly;
         display: block
     }
+
     .dark-light .nav-bar .nav-links .li a {
         color: #f5f5f5
     }
-    .nav-links li:hover  , .active{
+
+    .nav-links li:hover {
         box-shadow: 0 0 10px #fff inset;
         color: #000;
         background-color: rgba(255, 255, 255, .993);
@@ -1540,6 +1814,7 @@ footer .Contact .Gog:hover~h6 {
         transform: scale(1.03);
         filter: brightness(110%)
     }
+
     .menu {
         position: fixed;
         height: 100%;
@@ -1556,6 +1831,7 @@ footer .Contact .Gog:hover~h6 {
         display: block;
         box-shadow: 0 0 4px rgba(92, 91, 91, .699)
     }
+
     .menu::before {
         content: 'Designed By : Yash Patel';
         font-size: 12px;
@@ -1568,14 +1844,17 @@ footer .Contact .Gog:hover~h6 {
         width: 80%;
         opacity: 44%
     }
+
     nav.active .menu {
         left: 0;
         transition: .2s ease-in-out
     }
+
     nav.active .nav-bar .navLogo a {
         opacity: 0;
         transition: .3s
     }
+
     .menu .logo-toggle {
         display: block;
         width: 100%;
@@ -1584,19 +1863,23 @@ footer .Contact .Gog:hover~h6 {
         justify-content: center;
         transition: .4s ease-in-out
     }
+
     .logo-toggle .siderbarClose {
         color: var(--text-color);
         font-size: 24px;
         cursor: pointer
     }
+
     .nav-bar .nav-links {
         flex-direction: column;
         padding-top: 30px
     }
+
     .nav-links li a {
         display: block;
         margin-top: 20px
     }
+
     .footer .footer-update {
         display: block;
         flex-wrap: wrap;
@@ -1605,12 +1888,15 @@ footer .Contact .Gog:hover~h6 {
         height: max-content;
         justify-content: center
     }
+
     .footer .footer-update .line {
         display: none
     }
+
     .footer .footer-update .form {
         width: 100%
     }
+
     .footer-update .footer-gallery {
         display: block;
         display: grid;
@@ -1620,6 +1906,7 @@ footer .Contact .Gog:hover~h6 {
         border: none;
         border-top: 2px solid var(--text-color)
     }
+
     .footer-icons {
         flex-wrap: wrap;
         width: 100%;
@@ -1627,15 +1914,18 @@ footer .Contact .Gog:hover~h6 {
         overflow: hidden;
         margin: auto
     }
+
     .footer-icons .links {
         width: 100%;
         display: flex
     }
+
     .footer-icons .links ul {
         display: block;
         flex-wrap: wrap;
         display: flex
     }
+
     .footer-icons .links li {
         width: 100%;
         margin: 1%;
@@ -1644,12 +1934,14 @@ footer .Contact .Gog:hover~h6 {
         display: flex;
         justify-content: center
     }
+
     .footer-icons .links li a {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center
     }
+
     .footer-icons .links li:hover {
         transform: translateX(8px);
         color: #212a3f;
@@ -1658,20 +1950,24 @@ footer .Contact .Gog:hover~h6 {
         padding: .5px .5px .5px 4%;
         border: none
     }
+
     .footer-icons .links li:hover a {
         color: #7196eb
     }
+
     .Team {
         background-image: linear-gradient(90deg, rgba(255, 255, 167, .493), rgba(255, 255, 255, .445), rgba(255, 222, 152, .411), rgba(176, 239, 255, .699));
         backdrop-filter: opacity(110%);
         margin-top: 0;
         padding: 4%
     }
+
     body.dark .Team {
         background-color: var(--body-color);
         background-image: none;
         margin-top: 0
     }
+
     .team-box {
         display: flex;
         padding: 0;
@@ -1681,10 +1977,12 @@ footer .Contact .Gog:hover~h6 {
         align-items: center;
         gap: 20px
     }
+
     .card {
         width: 200px;
         height: 200px
     }
+
     .card .bottom .bottom-bottom {
         bottom: .4rem;
         justify-content: center;
@@ -1692,6 +1990,7 @@ footer .Contact .Gog:hover~h6 {
         text-align: center;
         padding: 1%
     }
+
     .card .bottom .bottom-bottom .social-links-container {
         display: flex;
         gap: .1rem;
@@ -1700,9 +1999,11 @@ footer .Contact .Gog:hover~h6 {
         text-align: center;
         bottom: .2rem
     }
+
     .card a {
         text-decoration: none
     }
+
     .card .bottom .bottom-bottom .social-links-container i {
         height: 20px;
         fill: white;
@@ -1710,22 +2011,26 @@ footer .Contact .Gog:hover~h6 {
         color: #fff;
         filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, .822))
     }
+
     .card .bottom .bottom-bottom .button {
         padding: .2rem .4rem;
         border-radius: 1vh;
         margin-left: 6%;
         font-family: var(--button-font)
     }
+
     .card .bottom .bottom-bottom .button:hover {
         background: #a6deff;
         color: #fff
     }
+
     .card:hover .bottom {
         top: 22%;
         border-radius: 80px 29px 29px;
         transition: .5s cubic-bezier(.645, .045, .355, 1) .2s;
         padding: 1%
     }
+
     .card:hover .profile-pic {
         width: 60px;
         height: 60px;
@@ -1738,15 +2043,18 @@ footer .Contact .Gog:hover~h6 {
         box-shadow: rgba(96, 75, 74, .1882352941) 0 5px 5px 0;
         transition: .5s ease-in-out, z-index .5s ease-in-out .1s
     }
+
     .card:hover .profile-pic:hover {
         transform: scale(1.05)
     }
+
     .card:hover .profile-pic img {
         transform: scale(1.3);
         background-position: center;
         background-size: cover;
         transition: .5s ease-in-out .5s
     }
+
     .card .bottom .content {
         position: absolute;
         padding: 4%;
@@ -1755,6 +2063,7 @@ footer .Contact .Gog:hover~h6 {
         right: 1.5rem;
         height: 160px
     }
+
     .card .bottom .content .name {
         display: block;
         font-size: 16px;
@@ -1762,18 +2071,21 @@ footer .Contact .Gog:hover~h6 {
         font-weight: 700;
         margin-top: 23%
     }
+
     .card .bottom .content .salt {
         display: block;
         color: #fff;
         font-size: 12px;
         margin: 0 1px
     }
+
     .card .bottom .content .name-bins h4 {
         display: block;
         color: #fff;
         margin-top: 2px;
         font-size: .7rem
     }
+
     .card .bottom .content .about-me {
         display: block;
         font-size: .6rem;
@@ -1781,6 +2093,7 @@ footer .Contact .Gog:hover~h6 {
         margin-top: .3rem
     }
 }
+
 @media (max-width:1400px) {
     nav .nav-bar {
         position: relative;
@@ -1793,20 +2106,25 @@ footer .Contact .Gog:hover~h6 {
         display: flex;
         text-align: center
     }
+
     .logo {
         left: 4px
     }
+
     li {
         width: max-content
     }
+
     .footer-icons {
         display: block
     }
+
     .footer-icons .links li {
         margin-left: 1%;
         padding: 1%;
         display: contents
     }
+
     .footer-icons .links ul {
         width: 60%;
         margin: auto;
@@ -1815,10 +2133,12 @@ footer .Contact .Gog:hover~h6 {
         text-align: center;
         justify-content: space-between
     }
+
     .footer-icons .links {
         padding: 2%
     }
 }
+
 @media (max-width:2000px) {
     nav .nav-bar {
         position: relative;
@@ -1831,14 +2151,17 @@ footer .Contact .Gog:hover~h6 {
         display: flex;
         text-align: center
     }
+
     .logo {
         left: 1px;
         font-family: Oswald;
         font-variant: all-petite-caps
     }
+
     li {
         width: max-content
     }
+
     .nav-links li a {
         position: relative;
         font-size: 15px;
@@ -1849,6 +2172,7 @@ footer .Contact .Gog:hover~h6 {
         border-radius: 1vw
     }
 }
+
 @media (max-width:3000px) {
     .nav-bar {
         font-size: 32px
