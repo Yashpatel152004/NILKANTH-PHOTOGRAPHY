@@ -1429,7 +1429,7 @@ footer .Contact .Contact-box .Gog:hover {
 footer .Contact .Gog:hover~h6 {
     transform: translateY(-10px)
 }
-.active,.nav-links li:hover {
+.Active,.nav-links li:hover {
     
     background-color: rgba(0, 204, 255, 0.116);
     /* background-color: rgb(255, 255, 182); */
