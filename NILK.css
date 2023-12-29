@@ -665,10 +665,7 @@ video[poster] {
     max-width: 100%;
     background-size: cover
 }
-.bx:active {
-    transform: rotate(120deg) scale(0);
-    transition: .1s ease-in-out
-}
+
 .Service-box .Price-box a,
 .Service-box .Price-box a i {
     font-family: var(--heading-font);
@@ -1240,6 +1237,11 @@ footer .Contact .Gog:hover~h6 {
     /* background-color: rgb(255, 255, 182); */
     color: black;
  }
+.bx:active {
+    transform: rotate(120deg) scale(0);
+    transition: .1s ease-in-out;
+    background-color:transparent;
+}
 @media (max-width >=320px) {
     * {
         font-size: xx-small;
