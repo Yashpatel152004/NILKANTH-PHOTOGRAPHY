@@ -263,36 +263,6 @@ nav .nav-bar .sidebarOpen {
     color: var(--text-color)
 }
 
-.nav-links li:nth-child(5) {
-    border-top: 1px solid #2b9fe2;
-    animation: 1s linear infinite alternate-reverse Border-Gallery;
-    transition: .4s ease-out
-}
-
-@keyframes Border-Gallery {
-    0% {
-        border-top: 1px solid #f5f5f5
-    }
-
-    100% {
-        border-top: 1px solid #35e1ff;
-        transform: scale(1.01);
-        box-shadow: 0 0 8px #87ceeb inset
-    }
-}
-
-@keyframes Border-Book {
-    0% {
-        border-top: 1px solid #f5f5f5
-    }
-
-    100% {
-        border-top: 1px solid #96ff96;
-        transform: scale(1.01);
-        box-shadow: 0 0 8px rgba(157, 255, 178, .801) inset
-    }
-}
-
 .dot-3 {
     background-color: #9cd2ff;
     animation: 1s infinite dot-3-move, 6s infinite index
