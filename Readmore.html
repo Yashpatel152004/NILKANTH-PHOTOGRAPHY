@@ -16,13 +16,67 @@
     <title> Nilkanth Photography</title>
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="back">
             <a href="index.html"><i class="bx bx-arrow-back"></i></a>
         </div>
         <div class="nav-heading">
             Prices
         </div>
+    </nav> -->
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="navLogo"><img src="LOGO.png" class="navbar-logo logo" alt=""></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <i class='bx bx-x siderbarClose'></i>
+                    <span class="logo ">Nilkanth Photography</span>
+                </div>
+                <ul class="nav-links ">
+                    <li class="Active-LI"> <a class="Active" href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#team-info">Team Info</a></li>
+                    <li><a href="#service">Services & Pricing</a></li>
+                    <li><a href="Teaser.html">Teaser</a></li>
+                    <li><a href="BookOrder.html">Book Event</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+                    <div class="search-field">
+                        <div class="search"> <input type="text" onkeyup="myFunction()" id="myInput" list="input"
+                                placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <div>
+                            <ul id="myUL">
+                                <li class="field"><a href="#About">Home</a></li>
+                                <li class="field"><a href="Readmore.html">Pricing</a></li>
+                                <li class="field"><a href="Readmore.html">Services</a></li>
+                                <li class="field"><a href="#Contact">Contact</a></li>
+                                <li class="field"><a href="BookOrder.html">Book Event</a></li>
+                                <li class="field"><a href="Gallery.html">Gallery</a></li>
+                                <li class="field"><a href="#team-info">Team Info</a></li>
+                                <li class="field"><a href="#Contact">Contact</a></li>
+                                <li class="field"><a href="Teaser.html">New Tesears</a></li>
+                                <li class="field"><a href="contact.html">Location</a></li>
+                                <li class="field"><a href="#team-info">Ashvin Patel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </nav>
     <div class="pricing" data-aos="Zoom-in-up">
         <div class="pricing-info">
@@ -255,5 +309,58 @@
         offset: 100,
         duration: 1000,
     });
+    const body = document.querySelector("body"),
+    nav = document.querySelector("nav"),
+    modeToggle = document.querySelector(".dark-light"),
+    searchToggle = document.querySelector(".searchToggle"),
+    sidebarOpen = document.querySelector(".sidebarOpen"),
+    siderbarClose = document.querySelector(".siderbarClose");
+let getMode = localStorage.getItem("mode");
+if (getMode && getMode === "dark-mode") {
+    body.classList.add("dark");
+}
+// js code to toggle dark and light mode
+modeToggle.addEventListener("click", () => {
+    modeToggle.classList.toggle("active");
+    body.classList.toggle("dark");
+    // js code to keep user selected mode even page refresh or file reopen
+    if (!body.classList.contains("dark")) {
+        localStorage.setItem("mode", "light-mode");
+    } else {
+        localStorage.setItem("mode", "dark-mode");
+    }
+});
+// js code to toggle search box
+searchToggle.addEventListener("click", () => {
+    searchToggle.classList.toggle("active");
+});
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click", () => {
+    nav.classList.add("active");
+});
+body.addEventListener("click", e => {
+    let clickedElm = e.target;
+    if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+        nav.classList.remove("active");
+    }
+});
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 </script>
 </html>
