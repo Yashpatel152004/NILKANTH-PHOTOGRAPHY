@@ -2068,6 +2068,13 @@ footer .Contact .Gog:hover~h6 {
         color: #fff;
         margin-top: .3rem
     }
+     .Active  {
+        background-color: var(--nav-color);
+    }
+    .nav-bar .nav-links .Active{
+        background-color: transparent;
+        color: black;
+    }
 }
 
 @media (max-width:1400px) {
