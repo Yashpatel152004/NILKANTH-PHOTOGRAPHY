@@ -1,20 +1,10 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css');
-@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=Concert+One&family=Dancing+Script:wght@500&family=League+Script&family=Nanum+Pen+Script&family=Open+Sans:wght@300&family=Raleway:wght@200&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Cormorant+Garamond:wght@600&family=Didact+Gothic&family=Forum&family=Montserrat:wght@200&family=Nunito:wght@200&family=Oswald:wght@700&family=Parisienne&family=Pinyon+Script&family=Quicksand&family=Ramaraja&family=Roboto+Condensed:wght@300&family=Tenor+Sans:wght@400&display=swap');
-/* @import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css'); */
 @import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-@font-face {
-    font-family: IsIdora;
-    src: url(Latinotype\ -\ Isidora-Light.woff);
-}
-@font-face {
-    font-family: Optima;
-    src: url(OPTIMA.woff);
-}
+
 html,
 body {
     scroll-behavior: smooth;
