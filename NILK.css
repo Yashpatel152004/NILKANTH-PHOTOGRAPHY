@@ -1250,7 +1250,7 @@ display: block;
     display: flex;
     justify-content: space-evenly;
 }
- .Contact-box .contact-info ,  h3{
+ .Contact-box .contact-info ,ddd h3{
     text-align: left;
 }
 .Contact-box .contact-info p{
@@ -1612,7 +1612,7 @@ footer .Contact .Gog:hover~h6 {
     .menu {
         position: fixed;
         height: 100%;
-        width: 100%;
+        width: 70%;
         left: -100%;
         top: 0;
         padding:8% 4%;
@@ -1863,7 +1863,7 @@ footer .Contact .Gog:hover~h6 {
         transform: scale(1.01);
         box-shadow: 0px 0px 10px rgb(255, 255, 255) inset;
         color: #0dfcf0;
-        background-color: transparent;
+        background-color: white;
         transition: all 0.3s ease-in-out;
         transform: scale(1.03);
         filter: brightness(110%);
