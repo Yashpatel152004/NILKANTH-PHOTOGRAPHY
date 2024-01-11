@@ -1872,7 +1872,7 @@ footer .Contact .Gog:hover~h6 {
         background-color: var(--nav-color);
     }
     .nav-bar .nav-links .Active{
-        background-color: transparent;
+        background-color: white;
         color: black;
     }
     .Contact .Contact-box .Gog{
