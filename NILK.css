@@ -1260,9 +1260,9 @@ display: block;
   .Contact-box .map{
     display: flex;
   }
-.Contact .Contact-box .Gog .address h3 , h4{
+/* .Contact .Contact-box .Gog .address h3 , h4{
   text-align: left;
-}
+} */
 .design-line{
     border: 2px solid var(--text-color);
     width: 5px;
