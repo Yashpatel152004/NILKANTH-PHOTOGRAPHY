@@ -1250,9 +1250,7 @@ display: block;
     display: flex;
     justify-content: space-evenly;
 }
- .Contact-box  h3{
-    text-align: left;
-}
+
 .Contact-box .contact-info p{
     font-size: 1rem;
 }
