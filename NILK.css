@@ -1262,9 +1262,9 @@ display: block;
   .Contact-box .map{
     display: flex;
   }
-/* .Contact .Contact-box .Gog .address h3 , h4{
+ .Contact .Contact-box .Gog .address h3 , .address h4{
   text-align: left;
-} */
+} 
 .design-line{
     border: 2px solid var(--text-color);
     width: 5px;
@@ -1273,11 +1273,11 @@ display: block;
 }
 .address , .email , .Call{
     margin-top:1rem;
-        text-align:left;
+    
 }
 .address p, .email  p, .Call , p{
     font-family: "tenor sans";
-    text-align:left;
+   
 }
 .Contact .Contact-box .Gog iframe {
     height: 300px;
