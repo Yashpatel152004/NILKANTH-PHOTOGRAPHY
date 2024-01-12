@@ -871,6 +871,7 @@ display: block;
     font-family: optima;
     color: white;
     margin-top: 2px;
+      font-size:0.4rem;
   }
   .card .bottom .content .about-me {
     display: block;
@@ -1849,7 +1850,7 @@ footer .Contact .Gog:hover~h6 {
         display: block;
         color: white;
         margin-top: 2px;
-        font-size: 0.7rem;
+        font-size: 0.4rem;
       }
       .card .bottom .content .about-me {
         display: block;
