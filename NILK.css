@@ -55,7 +55,7 @@ a{
 }
 body {
     height: 100%;
-    background-color: var(--body-color);
+    background-color: var(--body-color);e
     /* background-image: url(body.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -1273,9 +1273,11 @@ display: block;
 }
 .address , .email , .Call{
     margin-top:1rem;
+        text-align:left;
 }
 .address p, .email  p, .Call , p{
     font-family: "tenor sans";
+    text-align:left;
 }
 .Contact .Contact-box .Gog iframe {
     height: 300px;
