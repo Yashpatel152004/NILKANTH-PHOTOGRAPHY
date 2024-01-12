@@ -1255,6 +1255,7 @@ display: block;
 
 .Contact-box .contact-info p{
     font-size: 1rem;
+    text-align:left;
 }
 .Contact-box .contact-info {
     width: auto;
@@ -1262,7 +1263,7 @@ display: block;
   .Contact-box .map{
     display: flex;
   }
- .Contact .Contact-box .Gog .address h3 , .address h4{
+ .Contact .Contact-box .Gog  h3 , .Gog h4{
   text-align: left;
 } 
 .design-line{
