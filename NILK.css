@@ -1,4 +1,4 @@
-/* ===== Google Font Import - Poppins ===== */
+e/* ===== Google Font Import - Poppins ===== */
 @import url('https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css');
 
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
@@ -624,7 +624,7 @@ body.dark .search-field i {
     font-size: 1.2rem;
     font-weight: 300;
 
-    display: flex;
+    
     align-items:center;
     text-align: center;
     font-family: oswald;
