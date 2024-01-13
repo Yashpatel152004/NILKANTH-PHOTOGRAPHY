@@ -890,7 +890,7 @@ display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
-      overflow:scroll;
+
   }
   .card .bottom .bottom-bottom .social-links-container {
     display: flex;
