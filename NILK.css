@@ -345,6 +345,8 @@ video[poster]{max-width: 100%;background-size: cover;}
 }
 .About .img {
     filter: saturate(200%) grayscale(0%);
+    display:block;
+    margin:auto;
 }
 .About .details {
     backdrop-filter: blur(80px);
