@@ -621,9 +621,9 @@ body.dark .search-field i {
     text-shadow: 0px 0px 0.2px #6dfff5a1;
     font-size: 1.2rem;
     font-weight: 300;
-    bottom: 1px;
+
     display: flex;
-    position: relative;
+    align-items:center;
     text-align: center;
     font-family: oswald;
     backdrop-filter: blur(10px);
