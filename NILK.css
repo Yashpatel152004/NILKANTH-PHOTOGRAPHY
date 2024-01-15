@@ -628,7 +628,7 @@ body.dark .search-field i {
     align-items:center;
     text-align: center;
     font-family: oswald;
-    backdrop-filter: blur(10px);
+/*     backdrop-filter: blur(10px); */
     font-variant: all-petite-caps;  
 }
 .Service-box .Price-box {
@@ -877,7 +877,7 @@ display: block;
   }
   .card .bottom .content .about-me {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: white;
     margin-top: 2px;
     font-family:optima;
