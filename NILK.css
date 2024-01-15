@@ -1656,7 +1656,7 @@ footer .Contact .Gog:hover~h6 {
     .menu .logo-toggle {
         display: block;
         width: 100%;
-        display: flex;
+/*         display: flex; */
         margin: auto;
         align-items: center;
        
