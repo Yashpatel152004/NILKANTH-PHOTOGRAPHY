@@ -121,6 +121,7 @@ p {
   justify-content: center;
   align-items: center;
   margin:auto;
+  padding:5px 12%;
 }
 
 .img-fluid {
