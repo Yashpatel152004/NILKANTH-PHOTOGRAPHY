@@ -38,9 +38,11 @@ margin:auto;
 }
 
 body {
-  padding: 0px 4px;
+  padding: 5px 10px;
   text-align: center;
   background-color: white;
+  margin:auto;
+  max-width:3000px;
 }
 
 body.dark {
@@ -81,6 +83,7 @@ body.dark {
 .W9-16,
 .gallery {
   grid-template-rows: norepeat(5, 5vw);
+  margin:auto;
 }
 
 .Gallery,
@@ -88,6 +91,7 @@ body.dark {
 .W9-16 img,
 img {
   width: 100%;
+  margin:auto;
 }
 
 h1,
@@ -115,13 +119,15 @@ p {
   grid-gap: 5px;
   margin-top: 5px;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  margin:auto;
 }
 
 .img-fluid {
   max-width: 100%;
   margin-top: 1%;
   border-radius: 4px;
+  margin:auto;
 
 }
 
@@ -130,6 +136,7 @@ p {
   margin-top: 1%;
   border-radius: 4px;
   padding: 0px 20px;
+  margin:auto;
 }
 
 .vid-fluid video {
@@ -146,7 +153,8 @@ p {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 5px;
-  margin-top: 1%
+  margin-top: 1%;
+  margin:auto;
 }
 
 .W9-16 img {
