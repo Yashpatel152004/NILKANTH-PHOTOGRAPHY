@@ -369,12 +369,12 @@ section {
     justify-content: center;
     flex-wrap:wrap;
 }
-.videos iframe{
+/* .videos iframe{
     width: 560px;
     height: 315px;
     box-shadow: 0px 2px 0px solid rgb(5, 1, 1);
     border-radius: 2px;
-}
+} */
 .About,
 nav .nav-bar {
     display: flex;
@@ -1498,10 +1498,7 @@ footer .Contact .Gog:hover~h6 {
         height: 200px;
         opacity: 90%
     }
-    .swiper-pagination {
-        background-color: #ffffff00;
-        display: none
-    }
+    
     .About,
     .About .details,
     .Service-box,
