@@ -355,7 +355,7 @@ nav .nav-logo img {
 .card {
     position: relative;
     width: 300px;
-    height: 160px;
+/*     height: 100%; */
     overflow: hidden;
     padding: 1px 1px;
     border-radius: 1.1vh;
