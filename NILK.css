@@ -1602,7 +1602,8 @@ footer .Contact .Gog:hover~h6 {
         left: 10%;
         right: 10%;
         width: 80%;
-        opacity: 44%
+        opacity: 44%;
+        font-variant-caps: all-small-caps;
     }
     nav.active .menu {
         left: 0;
