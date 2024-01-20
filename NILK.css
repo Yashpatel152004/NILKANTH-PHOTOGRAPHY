@@ -1592,12 +1592,12 @@ footer .Contact .Gog:hover~h6 {
     }
     .menu::before {
         content: 'Designed By : Yash Patel';
-        font-size: 12px;
+        font-size: 8px;
         font-family:tenor sans;
         position: absolute;
-        bottom: .5%;
+        bottom: 1%;
         justify-content: center;
-        letter-spacing:2px;
+        letter-spacing:1px;
         margin: auto;
         left: 10%;
         right: 10%;
