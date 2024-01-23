@@ -9,7 +9,8 @@
 body {
     font-size: 1rem;
     font-family: "tenor sans";
-    background-image: linear-gradient(90deg, rgb(255, 222, 222), rgb(255, 255, 218) ,rgb(230, 248, 255));
+    /* background-image: linear-gradient(90deg, rgb(255, 222, 222), rgb(255, 255, 218) ,rgb(230, 248, 255));
+     */
 }
 *{
     -webkit-tap-highlight-color: transparent;
@@ -39,12 +40,25 @@ a {
     width: 100%;
     padding: 0px 4px;
 }
-body.dark{
-    background-image: none;
-    background-image: linear-gradient(-90deg, rgb(255, 222, 222), rgb(255, 255, 218) ,rgb(230, 248, 255));
-    
+button{
+    width: 30%;
+    height: 30px;
+    background-color: #FAACA8;
+background-image: linear-gradient(45deg, #faeea8 0%, #DDD6F3 70%);
+   outline: none;
+    border:2px solid rgba(0, 0, 0, 0.479);
+    padding: 5px;
+    border-radius: 2px;
 }
-
+button:hover{
+    filter: brightness(120%);
+}
+button {
+    text-decoration: none;
+    color: black;
+    font-family: tenor sans;
+    font-weight: 900;
+}
 .pricing-info {
     width: 100%;
     height: auto;
@@ -53,7 +67,7 @@ body.dark{
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     grid-column-gap: 2%;
     grid-row-gap: 1%;
     padding: 0px 10px;
@@ -64,27 +78,30 @@ body.dark{
     height: 350px;
     border-radius: 1vh;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.205);
-    /* background-image: linear-gradient( -90deg, rgba(199, 197, 197, 0.158) ,  rgba(20, 20, 20, 0.486)); */
-    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.24);
+    background-color: #000000;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d4d3dd2a, #efefbb3f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d4d3dd2a, #f1f1041c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.219) inset;
     backdrop-filter: blur(200%);
     margin: 0.4rem;
     cursor: pointer;
     transition: all .3s;
 }
 .card_box background-img{
-    filter: blur(100%);
+    filter: blur(200%);
 }
-/* body.dark .card_box{ 
+ body.dark .card_box{ 
   backdrop-filter: blur(200%);
-  } */
-  
+  background-color: #05050380;
+  box-shadow: 0px 0px 2px rgb(255, 251, 219) inset;
+  background-image: none;
+  } 
 .card_box:hover {
-    transform: scale(1.3);
     transition: all 0.1s linear;
     background-image: linear-gradient(-45deg, #ffffff6c 0%, #ffffff4f 51%, #ffffff1f 100%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.185) ;
-    text-shadow: 0px 0px 0.3px rgba(44, 44, 44, 0.438);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.185) ;
+    /* text-shadow: 0px 0px 0.3px rgba(44, 44, 44, 0.438); */
     backdrop-filter: blur(100px);
 }
 .card_box span {
@@ -118,15 +135,17 @@ body.dark{
     margin-top:1rem;
     width: auto;
     height: auto;
-    color: currentColor;
+     color: rgb(49, 35, 35);
     background-color: transparent;
     content: none;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
     margin-left: 5rem;
-    font-family: var(--body-font);
     font-weight: 500;
+}
+body.dark .card_box .Price-details{
+    color: #ffebe1;
 }
 /* .card_box .Price-details-Cinematography{
     align-items: stretch;
@@ -159,13 +178,12 @@ body.dark{
     background-color: rgba(0, 0, 0, 0.048);
     border-radius: 1vh;
 } */
-
-.card_box .Price-details .Price-List li {
+.card_box .Price-details .Price-List li , .Price-List-Cinematography{
     font-size: 1rem;
     font-family: "tenor sans";
     word-break:keep-all;
+    list-style: square;
     width: 100%;
-    
 }
 .card_box .Price-details .Primium{
     background-image: linear-gradient(
@@ -181,31 +199,61 @@ body.dark{
   color: transparent; 
   font-weight: 600;
   filter:brightness(60%) saturate(200%);
+  list-style: square;
    /* text-shadow: 0px 0px 1px #e6d995; */
 }
 /* body.dark .card_box{
     background-image: linear-gradient( rgba(255, 255, 255, 0.315) , rgba(255, 255, 190, 0));
-
 } */
-
+.card_box .Price-details .Price-List-Cinematography{
+    font-family: tenor sans;
+    margin-bottom:1rem;
+    width: 100%;
+}
 .card_box .Price-details .Price-List-Cinematography li{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     list-style: square;
-    list-style: none;
+    margin-top: 1px;
+    font-family: tenor sans;
 }
 .card_box .Price .Price-value{
     width: fit-content;
     height: fit-content;
-    
     border-radius: 0.5vh;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 0px 0px 0.4px rgba(0, 0, 0, 0.562);
+    font-size: 1.9rem;
+    font-weight: bolder;
+    background-image: linear-gradient(
+        120deg,
+            #cb9b51 22%,
+            #d6b863 10%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%
+            );
+    background-clip: text;
+   color: transparent; 
+   filter: brightness(60%) saturate(200%);
     padding: 1%;
     margin-right: 1rem;
     letter-spacing: 0.5px;
-    color: rgba(17, 17, 17, 0.575);
-    font-family: "Tenor sans";
+    color: transparent;
+    font-family: "oswald";
+    font-variant: all-petite-caps;
+}
+body.dark .card_box .Price .Price-value{
+    background-image: linear-gradient(
+        120deg,
+            #cb9b51 22%,
+            #d6b863 10%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%
+            );
+    background-clip: text;
+   color: transparent; 
+   filter: brightness(110%);
 }
 .card_box span::before {
     content: 'PHOTOGRAPHY';
@@ -218,12 +266,12 @@ body.dark{
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #474747;
+    color: #030303;
     font-weight: 600;
     letter-spacing: 0.1rem;
     font-size: 1rem;
     text-transform: uppercase;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.103);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.308);
 }
 .card_box:nth-child(2) span::before{
     content: 'VIDEOGRAPHY';
@@ -272,6 +320,15 @@ body.dark{
     box-shadow: 140px -140px #00000013;
     background-image: linear-gradient(45deg, #0000002f 0%, #6e6e6e23 51%, #0000001a 100%);
 }
+body.dark  .card_box span::before {
+    color: rgba(255, 255, 255, 0.842);
+    background-image: linear-gradient(45deg, #ffffff2f 0%, #ffffff00 51%, #ffffff4f 100%);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.445);
+    border-radius: 40px;
+}
+body.dark span::after{
+    box-shadow: 140px -140px #00000013;
+}
 .pricing {
     display: flex;
     justify-content: center;
@@ -291,13 +348,12 @@ body.dark .card_box .Price-details .Primium {
   color: transparent;
   font-weight: 600;
   filter:brightness(140%);
-
 }
  @media (max-width:4000px) {
     .pricing-info {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
     }
@@ -306,7 +362,7 @@ body.dark .card_box .Price-details .Primium {
     .pricing-info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
     }
@@ -315,15 +371,18 @@ body.dark .card_box .Price-details .Primium {
     .pricing-info {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         grid-column-gap: 1%;
         grid-row-gap: 1%;
+        display: flex;
+        height: 100%;
     }
     .card_box{
         height: 100%;
         width: 100%;
+        margin-top: 1.2rem;
     }
-    .card_box .Price .Price-value{font-size: 1rem;}
+    .card_box .Price .Price-value{font-size: 2rem;}
     .card_box .Price-List-Cinematography{font-size: 0.9rem;}
 }
 @media (max-width:480px) {
@@ -331,29 +390,35 @@ body.dark .card_box .Price-details .Primium {
         width: 100%;
         display: flex;
         height: 100%;
+        padding: 2px 5px;
     }
     .card_box{
-        margin-top: 1rem;
-        padding: 4px 10px;
+        margin-top: 1.2rem;
+        padding: 4px 8px;
     }
     .card_box .Price .Price-value{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .card_box .Price-details .Price-List li {
         font-size: 0.7rem;
+        margin-bottom: 2px;
     }
     .card_box span::before {
         content: 'PHOTOGRAPHY';
         position: absolute;
-        width: 120%;
-        height: 30px;
+        width: 110%;
+        height: 20px;
         background-image: linear-gradient(45deg, #0000002f 0%, #00000000 51%, #00000073 100%);
-        transform: rotate(-45deg) translateY(-30px);
+        transform: rotate(-45deg) translateY(-35px);
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
-        color: #474747;
+        color: #050505;
+        padding: 0px 2px;
+        font-size: 0.6rem;
+        border-radius: 10px;
+        padding: 0px 20px;
     }
     .card_box span::after {
         content: none;
@@ -368,31 +433,32 @@ body.dark .card_box .Price-details .Primium {
     }
     .card_box:nth-child(2) span::before{
         content: 'VIDEOGRAPHY';
-        font-weight: 0.5rem;
+        font-size: 0.6rem;
     }
     .card_box:nth-child(3) span::before{
         content: 'CINEMATOGRAPHY';
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .card_box:nth-child(4) span::before{
         content: 'WEDDING PHOTOSHOOT';
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
     .card_box:nth-child(5) span::before{
         content: 'ENGAGEMENT PHOTOSHOOT';
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .card_box:nth-child(6) span::before{
         content: 'PRE-WEDDING';
-        font-size: 0.6rem;
+        font-size: 0.4rem;
+        width: 100%;
     }
     .card_box:nth-child(7) span::before{
         content: 'AlBUM DESIGNING';
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .card_box:nth-child(8) span::before{
-        content: 'POTRAIT PHOTOGRAPHY';
-        font-size: 0.6rem;
+        content: 'POTRAIT  PHOTOGRAPHY';
+        font-size: 0.7rem;
     }
     .card_box:nth-child(9) span::before{
         content: 'MATERNITY';
