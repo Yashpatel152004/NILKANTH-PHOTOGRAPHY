@@ -280,10 +280,13 @@ nav .nav-logo img {
 .Gallery .Gallery-G-card {
   width: 100%;
   height: 100%;
-  display: grid;
+  
   display: flex;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr)); */
+  grid-template-columns: auto auto auto auto;
+  /* align-items: center; */
   gap: 24px;
   justify-content: center;
   padding: 2%;
@@ -337,7 +340,8 @@ nav .nav-logo img {
   align-items: center;
   justify-content: center;
   display: block;
-
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   transition: .6s cubic-bezier(.23, 1, .32, 1);
   box-shadow: 0 0 16px rgba(0, 0, 0, .137);
   font-family: optima;
@@ -427,10 +431,7 @@ nav .nav-logo img {
   border: none;
 }
 
-.btn-like:is(:focus, :focus-visible, :active) {
-  outline: 0;
-  box-shadow: 0 0 0 0 var(--btn-bg-color), 0 0 0 0 var(--btn-bg-2);
-}
+
 
 .btn-download {
   --btn-bg-1: rgba(166, 255, 178, 0.719);
@@ -459,8 +460,8 @@ nav .nav-logo img {
   outline: 0;
   box-shadow: 0 0 0 0 var(--btn-bg-color), 0 0 0 0 var(--btn-bg-2);
 }
-   
-@media (max-width:600px) {
+
+ @media (max-width:600px) {
   body .BG2 {
     width: 100%;
     height: 100%;
@@ -481,11 +482,13 @@ nav .nav-logo img {
 
   .Gallery .Gallery-G-card {
     grid-template-columns: repeat(auto-fit, minmax(180px, 0.8fr));
+    grid-template-columns: auto;
     padding: 5px 25px;
   }
 
   .Gallery .Gallery-G-card .G-card {
     width: 100%;
+
   }
 
   .Gallery .Gallery-G-card .G-card__content {
@@ -502,18 +505,19 @@ nav .nav-logo img {
     display: none
   }
 }
- @media (max-width:2000px){
+@media (max-width:960px){
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   justify-content: center;
-}
+}   
+
 @media (max-width:1500px){
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
-}
-@media (max-width:1000px){
+} 
+@media (max-width:2000px){
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
 }
