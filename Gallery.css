@@ -459,7 +459,7 @@ nav .nav-logo img {
   outline: 0;
   box-shadow: 0 0 0 0 var(--btn-bg-color), 0 0 0 0 var(--btn-bg-2);
 }
- @media (max-width:2000px){
+/*  @media (max-width:2000px){
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
@@ -473,7 +473,7 @@ nav .nav-logo img {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-} 
+}  */
 @media (max-width:600px) {
   body .BG2 {
     width: 100%;
