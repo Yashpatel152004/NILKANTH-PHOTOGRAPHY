@@ -8,18 +8,25 @@
   <meta
     content="Owner of Nilkanth photography : Ashvin Patel,Best photography Studio , Botad , Photography , Videography , Pre-wedding, maternity , Album disgner , Alum designing , Nilkanth Photography , "
     name=description>
-  <link href=LOGO.png rel=icon>
+ <head>
+    <link href=LOGO.png rel=icon>
   <link preload href=NILK.css rel=stylesheet>
   <script src="jssor.slider-28.1.0.min.js" type="text/javascript" ></script>
     <script src="standard.js" ></script>
     <link rel="stylesheet" href="standard.css">
-  <head>
-    
+  
+    <script src="dist/smooth-scrollbar.js"></script>
     <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
   </head>
   <title>Nilkanth Photography</title>
   <script>function myfunction() { document.getElementById("Loading").style.visibility = "hidden" }</script>
   <body onload=myfunction()>
+    <style>
+      body{
+      width:100%;
+        height:100vh;
+      }
+    </style>
     <div class=Animation-body id=Loading>
       <div class=Animation-box>
         <div class="dot dot-1"></div>
@@ -460,6 +467,16 @@ function myFunction() {
         }
     }
 }
+
+let Scrollbar = window.Scrollbar;
+const options = {
+  'dumping' : .07,
+  'alwaysShowtracks' : true;
+}
+Scrollbar.init(document.querySelector('body'));
+
+ 
+      
  AOS.init({
   offset: 0,
    duration: 00,
