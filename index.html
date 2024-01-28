@@ -416,6 +416,10 @@
     </section>
      </div>
     <script>
+      AOS.init({
+  offset: 100,
+   duration:200,
+ });
          const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
@@ -475,10 +479,7 @@ function myFunction() {
 
  
       
- AOS.init({
-  offset: 100,
-   duration:100,
- });
+ 
       let Scrollbar = window.Scrollbar;
 const options = {
   'dumping' : .07,
