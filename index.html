@@ -10,13 +10,15 @@
     name=description>
   <link href=LOGO.png rel=icon>
   <link preload href=NILK.css rel=stylesheet>
-  <script src="jssor.slider-28.1.0.min.js" type="text/javascript" ></script>
+  <script src="jssor.slider-28.1.0.min.js" type="text/javascript"></script>
     <script src="standard.js" ></script>
     <link rel="stylesheet" href="standard.css">
   <head>
-    
-    <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
+        <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
+        
   </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
   <title>Nilkanth Photography</title>
   <script>function myfunction() { document.getElementById("Loading").style.visibility = "hidden" }</script>
   <body onload=myfunction()>
@@ -168,7 +170,7 @@
     <section id=About>
       <div class=About>
 <!--         <div data-aos=zoom-in-up><img alt="" src=https://lh3.googleusercontent.com/drive-viewer/AEYmBYTEg_Rd2xR9bx0Z12as5Gu8JGQnsF5vo8OL-hfX3EVdzHn4XSVuyoAMbnzq_qnyx2JpwC0PMh-OUgQImlMtYS97qPtAKA=s2560 class=img></div> -->
-        <div class=details data-aos=fade-u>
+        <div class=details data-aos=fade-up data-scroll-section>
           <h1>NILKANTH PHOTOGRAPHY</h1>
           <br>
           <h1>"Through the lens of Nilkanth Photography, moments become timeless masterpieces, and stories unfold in
@@ -206,7 +208,7 @@
         <div class=container>
           <h2 class=heading>SERVICE</h2>
           <hr>
-          <div class=box-container data-aos=zoom-in>
+          <div class=box-container data-aos=zoom-in data-scroll-section>
             <div class=box data-aos=zoom-in><img alt="" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRInzTD5fQLsXCt9QWMVY2aVJuYyX5sCS1NhdX_jR4yEYDPHXq55Rz-upO6MBiMIdnH-QiEd8jZsCF9zZHi1_91IPMTzA=s2560">
               <h3>Photography</h3>
               <p>We are also ready for a capture your memory</p><span class="Service-Price">Just Start From
@@ -259,7 +261,7 @@
       </div>
     </section>
     <section id=team-info>
-      <div class=Team data-aos=zoom-in>
+      <div class=Team data-aos=zoom-in   data-scroll-section>
         <h2 class=heading>TEAM</h2>
         <div class=team-cont data-aos=zoom-in-down>
           <hr>
@@ -405,6 +407,10 @@
       </footer>
     </section>
     <script>
+       AOS.init({
+  offset: 100,
+   duration: 200,
+ });
          const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
@@ -460,11 +466,12 @@ function myFunction() {
         }
     }
 }
- AOS.init({
-  offset: 100,
-   duration: 200,
- });
+const scroller = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});
     </script>
      <script type="text/javascript">jssor_1_slider_init();
     </script>
-   
+  </body>
+  </html>
