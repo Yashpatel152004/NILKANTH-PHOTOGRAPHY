@@ -26,10 +26,7 @@
   <title>Nilkanth Photography</title>
   <script>
     function myfunction() { document.getElementById("Loading").style.visibility = "hidden" }
-    AOS.init({
-        offset: 100,
-        duration: 300,
-    });
+  
   </script>
   <body onload=myfunction()>
     <style>
@@ -426,6 +423,10 @@
      </div>
   </body>
     <script>
+        AOS.init({
+        offset: 100,
+        duration: 300,
+    });
     const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
