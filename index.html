@@ -21,6 +21,12 @@
   <title>Nilkanth Photography</title>
   <script>function myfunction() { document.getElementById("Loading").style.visibility = "hidden" }</script>
   <body onload=myfunction() class="smooth">
+    <style>
+      body{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <div class=Animation-body id=Loading>
       <div class=Animation-box>
         <div class="dot dot-1"></div>
@@ -406,7 +412,7 @@
         
       </footer>
     </section>
-    </section>
+  
     <script>
        AOS.init({
   offset: 100,
@@ -475,7 +481,7 @@ let Scrollbar = window.Scrollbar;
 
 
 }
-Scrollbar.init(document.getElementsByClassName('smooth'), options);
+Scrollbar.init(document.querySelector('body'), options);
     </script>
      <script type="text/javascript">jssor_1_slider_init();
     </script>
