@@ -421,11 +421,7 @@
      </div>
   </body>
     <script>
-      AOS.init({
-        offset: 100,
-        duration: 300,
-    });
-         const body = document.querySelector("body"),
+    const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
     searchToggle = document.querySelector(".searchToggle"),
@@ -480,7 +476,10 @@ function myFunction() {
         }
     }
 }
-
+AOS.init({
+        offset: 100,
+        duration: 300,
+    });
 
  
       
