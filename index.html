@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="standard.css">
   <head>
         <script src=https://unpkg.com/aos@2.3.1/dist/aos.js></script>
+        <script src="Smooth-scrollbar.js"></script>
         
   </head>
   <title>Nilkanth Photography</title>
   <script>function myfunction() { document.getElementById("Loading").style.visibility = "hidden" }</script>
-  <body onload=myfunction()>
+  <body onload=myfunction() class="smooth">
     <div class=Animation-body id=Loading>
       <div class=Animation-box>
         <div class="dot dot-1"></div>
@@ -84,6 +85,7 @@
         </div>
       </div>
     </nav>
+    
     <section class=Slider>
       <div class=Slider-Container>
         <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
@@ -404,6 +406,7 @@
         
       </footer>
     </section>
+    </section>
     <script>
        AOS.init({
   offset: 100,
@@ -464,10 +467,17 @@ function myFunction() {
         }
     }
 }
+let Scrollbar = window.Scrollbar;
+  const options = {
 
+  'dumping': .7,
+  'alwaysShowtracks' : true
+
+
+}
+Scrollbar.init(document.getElementsByClassName('smooth'), options);
     </script>
      <script type="text/javascript">jssor_1_slider_init();
     </script>
   </body>
   </html>
-
