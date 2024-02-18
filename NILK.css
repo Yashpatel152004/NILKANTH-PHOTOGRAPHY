@@ -362,8 +362,8 @@ section {
 }
 .videos {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+/*     grid-template-columns: auto auto auto;
+    grid-template-rows: auto; */
     gap: 25px;
     grid-auto-flow: row;
     justify-content: center;
